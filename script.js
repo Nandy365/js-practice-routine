@@ -30,9 +30,17 @@
 //let username = window.prompt("what is your name")
 
 //console.log(username)
-let username;
-document.getElementById("submitbutton").onclick = function(){
-    username = document.getElementById("name").value;
-    console.log(username);
-    document.getElementById("username").innerHTML="hello"+ username;
-}
+// let username;
+// document.getElementById("submitbutton").onclick = function(){
+//     username = document.getElementById("name").value;
+//     console.log(username);
+//     document.getElementById("username").innerHTML="hello"+ username;
+// }
+
+//type conversion
+
+//(string,numbers,boolean)
+
+let age = window.prompt("hello mf")
+age +=1
+console.log(age)
