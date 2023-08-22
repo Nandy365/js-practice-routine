@@ -12,12 +12,21 @@
 
 //arithmetic
 
-let student = 40;
+//let student = 40;
 //student=student+1;
 //student=student-21;
 //student=student*2
 //let extra = student/2
 //let extra = student%3
 
-student +=20;
-console.log(student)
+//student +=20;
+//console.log(student)
+
+//let student = 2+3 * (2/3)
+
+//console.log(student)
+
+//how to accept user input
+let username = window.prompt("what is your name")
+
+console.log(username)
