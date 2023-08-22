@@ -41,6 +41,5 @@
 
 //(string,numbers,boolean)
 
-let age = window.prompt("hello mf")
-age +=1
-console.log(age)
+let age = 21;
+console.log
