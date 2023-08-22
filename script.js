@@ -27,6 +27,12 @@
 //console.log(student)
 
 //how to accept user input
-let username = window.prompt("what is your name")
+//let username = window.prompt("what is your name")
 
-console.log(username)
+//console.log(username)
+let username;
+document.getElementById("submitbutton").onclick = function(){
+    username = document.getElementById("name").value;
+    console.log(username);
+    document.getElementById("username").innerHTML="hello"+ username;
+}
