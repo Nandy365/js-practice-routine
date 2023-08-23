@@ -93,16 +93,34 @@
 
 // console.log(minimum)
 
+// let a;
+// let b;
+// let c;
+
+// a = window.prompt("Enter A")
+// a =Number(a)
+
+// b = window.prompt("Enter B")
+// a =Number(b)
+
+// c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2))
+
+// console.log("side c: ",c)
+
+
 let a;
 let b;
 let c;
 
-a = window.prompt("Enter A")
-a =Number(a)
+document.getElementById("submitbutton").onclick = function() {
 
-b = window.prompt("Enter B")
-a =Number(b)
+a = document.getElementById("textA").value;
+a =Number(a);
 
-c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2))
+b = document.getElementById("textB").value;
+a =Number(b);
 
-console.log("side c: ",c)
+c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+
+document.getElementById("textc").innerHTML = "sidec:" +c
+}
