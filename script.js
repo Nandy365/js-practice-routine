@@ -19,12 +19,12 @@
 //let extra = student/2
 //let extra = student%3
 
-//student +=20;
-//console.log(student)
+// student +=20;
+// console.log(student)
 
-//let student = 2+3 * (2/3)
+// let student = 2+3 * (2/3)
 
-//console.log(student)
+// console.log(student)
 
 //how to accept user input
 //let username = window.prompt("what is your name")
@@ -41,5 +41,8 @@
 
 //(string,numbers,boolean)
 
-let age = 21;
-console.log
+let age = window.prompt("how old are you")
+console.log(typeof age)
+age = Number(age)
+age +=1
+console.log("Happy birthday bro you are "+age+" year old")
