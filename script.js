@@ -41,8 +41,20 @@
 
 //(string,numbers,boolean)
 
-let age = window.prompt("how old are you")
-console.log(typeof age)
-age = Number(age)
-age +=1
-console.log("Happy birthday bro you are "+age+" year old")
+// let age = window.prompt("how old are you")
+// console.log(typeof age)
+// age = Number(age)
+// age +=1
+// console.log("Happy birthday bro you are "+age+" year old")
+
+let x;
+let y;
+let z;
+
+x = Number("212")
+y = String(212)
+z = Boolean("")
+
+console.log(x, typeof x)
+console.log(y, typeof y)
+console.log(z, typeof z)
