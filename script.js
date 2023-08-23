@@ -74,21 +74,35 @@
 
 //Math
 
-let x = 8.99
-let y = 9
-let z =11
-let maximum
-let minimum
+// let x = 8.99
+// let y = 9
+// let z =11
+// let maximum
+// let minimum
 
-//x = Math.round(x)
-//x = Math.random(x)
-//x = Math.abs(x)
+// //x = Math.round(x)
+// //x = Math.random(x)
+// //x = Math.abs(x)
 
-//x = Math.cos(x)
+// //x = Math.cos(x)
 
-//x = Math.pow(x)
+// //x = Math.pow(x)
 
-//maximum = Math.max(x,y,z)
-minimum = Math.min(x,y,z)
+// //maximum = Math.max(x,y,z)
+// minimum = Math.min(x,y,z)
 
-console.log(minimum)
+// console.log(minimum)
+
+let a;
+let b;
+let c;
+
+a = window.prompt("Enter A")
+a =Number(a)
+
+b = window.prompt("Enter B")
+a =Number(b)
+
+c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2))
+
+console.log("side c: ",c)
