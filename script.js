@@ -61,13 +61,34 @@
 
 //const = a variable that can't be changed 
 
-const PI = 3.14159
-let radius;
-let circumference;
+// const PI = 3.14159
+// let radius;
+// let circumference;
 
-radius = window.prompt("enter the radius of a circle")
-radius = Number(radius)
-//PI = 2.21
-circumference = 2 * PI + radius;
+// radius = window.prompt("enter the radius of a circle")
+// radius = Number(radius)
+// //PI = 2.21
+// circumference = 2 * PI + radius;
 
-console.log("the circle is",circumference)
+// console.log("the circle is",circumference)
+
+//Math
+
+let x = 8.99
+let y = 9
+let z =11
+let maximum
+let minimum
+
+//x = Math.round(x)
+//x = Math.random(x)
+//x = Math.abs(x)
+
+//x = Math.cos(x)
+
+//x = Math.pow(x)
+
+//maximum = Math.max(x,y,z)
+minimum = Math.min(x,y,z)
+
+console.log(minimum)
