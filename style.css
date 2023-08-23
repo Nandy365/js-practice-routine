@@ -1,3 +1,10 @@
+#countlable{
+    display: block;
+    text-align:center;
+    font-size: 50px;
+}
 .all{
+    display: block;
     text-align: center;
+    top :5px;
 }

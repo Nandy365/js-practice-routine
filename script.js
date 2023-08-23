@@ -108,19 +108,19 @@
 // console.log("side c: ",c)
 
 
-let a;
-let b;
-let c;
+// 
+let count = 0;
 
-document.getElementById("submitbutton").onclick = function() {
+document. getElementById("increasebutton").onclick = function() {
+    count +=1;
+    document.getElementById("countlable").innerHTML = count
+}
 
-a = document.getElementById("textA").value;
-a =Number(a);
-
-b = document.getElementById("textB").value;
-a =Number(b);
-
-c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
-
-document.getElementById("textc").innerHTML = "sidec:" +c
+document. getElementById("resetbutton").onclick =function(){
+    count =0;
+    document.getElementById("countlable").innerHTML = count
+}
+document.getElementById("decreasebutton").onclick =function(){
+    count -=1;
+    document.getElementById("countlable").innerHTML = count
 }
