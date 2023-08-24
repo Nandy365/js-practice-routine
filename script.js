@@ -247,24 +247,35 @@
 //switch
 
 
-let grade =90
+// let grade =90
 
-switch(true){
-    case grade >= 90:
-        console.log("you are very very good")
-    brack;
-    case grade >= 70:
-        console.log("you are very good")
-    brack;
-    case grade >= 80:
-        console.log("you are good")
-    brack;
-    case grade >= 60:
-        console.log("you are ok")
-    brack;
-    case grade >= 30:
-        console.log("you are fail")
-    brack;
-    default:
-        console.log("is not a number grde")
+// switch(true){
+//     case grade >= 90:
+//         console.log("you are very very good")
+//     brack;
+//     case grade >= 70:
+//         console.log("you are very good")
+//     brack;
+//     case grade >= 80:
+//         console.log("you are good")
+//     brack;
+//     case grade >= 60:
+//         console.log("you are ok")
+//     brack;
+//     case grade >= 30:
+//         console.log("you are fail")
+//     brack;
+//     default:
+//         console.log("is not a number grde")
+// }
+
+
+let temp = 50;
+let sunny = true;
+
+if(temp <= 0 || temp >= 30 && sunny == true){
+    console.log("to sunny")
+}
+else{
+    console.log("it so cold")
 }
