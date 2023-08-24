@@ -247,24 +247,24 @@
 //switch
 
 
-let grade ="C"
+let grade =90
 
-switch(grade){
-    case "A":
+switch(true){
+    case grade >= 90:
         console.log("you are very very good")
     brack;
-    case "B":
+    case grade >= 70:
         console.log("you are very good")
     brack;
-    case "C":
+    case grade >= 80:
         console.log("you are good")
     brack;
-    case "E":
+    case grade >= 60:
         console.log("you are ok")
     brack;
-    case "F":
+    case grade >= 30:
         console.log("you are fail")
     brack;
     default:
-        console.log("is not a letter grade")
+        console.log("is not a number grde")
 }
