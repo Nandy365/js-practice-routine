@@ -126,20 +126,36 @@
 // }
 
 // random number generator
-let x ;
-let y ;
-let z ;
+// let x ;
+// let y ;
+// let z ;
 
-document.getElementById("clickbutton").onclick = function(){
+// document.getElementById("clickbutton").onclick = function(){
 
-x = Math.floor(Math.random() * 6) +1
-y = Math.floor(Math.random() * 6) +1
-z = Math.floor(Math.random() * 6) +1
+// x = Math.floor(Math.random() * 6) +1
+// y = Math.floor(Math.random() * 6) +1
+// z = Math.floor(Math.random() * 6) +1
 
-document.getElementById("xlable").innerHTML = x
+// document.getElementById("xlable").innerHTML = x
 
-document.getElementById("ylable").innerHTML = y
+// document.getElementById("ylable").innerHTML = y
 
-document.getElementById("zlable").innerHTML =z
+// document.getElementById("zlable").innerHTML =z
 
-}
+// }
+
+//usefull string properties & methods
+let myname ="nandhakumar"
+let phonenumber = "111-23334-55667"
+
+console.log(myname.length)
+console.log(myname.charAt(4))
+console.log(myname.indexOf("k"))
+console.log(myname.lastIndexOf('k'))
+console.log(myname.trim())
+
+myname = myname.toLocaleUpperCase()
+myname = myname.toLocaleLowerCase()
+phonenumber=phonenumber.replaceAll("-","/")
+
+console.log(phonenumber)
