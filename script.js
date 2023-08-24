@@ -269,6 +269,7 @@
 //         console.log("is not a number grde")
 // }
 
+//and or logical operators
 
 let temp = 50;
 let sunny = true;
