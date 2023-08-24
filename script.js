@@ -222,24 +222,49 @@
 
 //checkbox propertty
 
-document.getElementById("submitbtn").onclick = function(){
+// document.getElementById("submitbtn").onclick = function(){
 
-    const visabtn = document.getElementById("visabtn")
-    const mastercardbtn = document.getElementById("mastercardbtn")
-    const gpaybtn = document.getElementById("gpaybtn")
+//     const visabtn = document.getElementById("visabtn")
+//     const mastercardbtn = document.getElementById("mastercardbtn")
+//     const gpaybtn = document.getElementById("gpaybtn")
 
-    if(visabtn.checked){
-        console.log("your paying with visa")
-    }
+//     if(visabtn.checked){
+//         console.log("your paying with visa")
+//     }
 
-    else if(mastercardbtn.checked) {
-        console.log("your paying with mastercard")
-    }
-    else if(gpaybtn.checked) {
-        console.log("your paying with gpay")
-    }
+//     else if(mastercardbtn.checked) {
+//         console.log("your paying with mastercard")
+//     }
+//     else if(gpaybtn.checked) {
+//         console.log("your paying with gpay")
+//     }
 
-    else{
-        console.log("you must select a payment type")
-    }
+//     else{
+//         console.log("you must select a payment type")
+//     }
+// }
+
+//switch
+
+
+let grade ="C"
+
+switch(grade){
+    case "A":
+        console.log("you are very very good")
+    brack;
+    case "B":
+        console.log("you are very good")
+    brack;
+    case "C":
+        console.log("you are good")
+    brack;
+    case "E":
+        console.log("you are ok")
+    brack;
+    case "F":
+        console.log("you are fail")
+    brack;
+    default:
+        console.log("is not a letter grade")
 }
