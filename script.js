@@ -109,18 +109,28 @@
 
 
 // 
-let count = 0;
+// let count = 0;
 
-document. getElementById("increasebutton").onclick = function() {
-    count +=1;
-    document.getElementById("countlable").innerHTML = count
-}
+// document. getElementById("increasebutton").onclick = function() {
+//     count +=1;
+//     document.getElementById("countlable").innerHTML = count
+// }
 
-document. getElementById("resetbutton").onclick =function(){
-    count =0;
-    document.getElementById("countlable").innerHTML = count
-}
-document.getElementById("decreasebutton").onclick =function(){
-    count -=1;
-    document.getElementById("countlable").innerHTML = count
-}
+// document. getElementById("resetbutton").onclick =function(){
+//     count =0;
+//     document.getElementById("countlable").innerHTML = count
+// }
+// document.getElementById("decreasebutton").onclick =function(){
+//     count -=1;
+//     document.getElementById("countlable").innerHTML = count
+// }
+
+// random number generator
+let x = Math.floor(Math.random() * 6) +1
+let y = Math.floor(Math.random() * 6) +1
+let z = Math.floor(Math.random() * 6) +1
+
+
+console.log(x)
+console.log(y)
+console.log(z)
