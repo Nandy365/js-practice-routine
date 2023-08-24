@@ -145,17 +145,31 @@
 // }
 
 //usefull string properties & methods
-let myname ="nandhakumar"
-let phonenumber = "111-23334-55667"
+// let myname ="nandhakumar"
+// let phonenumber = "111-23334-55667"
 
-console.log(myname.length)
-console.log(myname.charAt(4))
-console.log(myname.indexOf("k"))
-console.log(myname.lastIndexOf('k'))
-console.log(myname.trim())
+// console.log(myname.length)
+// console.log(myname.charAt(4))
+// console.log(myname.indexOf("k"))
+// console.log(myname.lastIndexOf('k'))
+// console.log(myname.trim())
 
-myname = myname.toLocaleUpperCase()
-myname = myname.toLocaleLowerCase()
-phonenumber=phonenumber.replaceAll("-","/")
+// myname = myname.toLocaleUpperCase()
+// myname = myname.toLocaleLowerCase()
+// phonenumber=phonenumber.replaceAll("-","/")
 
-console.log(phonenumber)
+// console.log(phonenumber)
+
+// slice()
+
+let fullname ="nandhakumar"
+let firstname;
+let lastname;
+
+//lastname=fullname.slice(6)
+//firstname=fullname.slice(0, 6)
+
+firstname =fullname.slice(0,fullname.indexOf(" "))
+lastname =fullname.slice(fullname.indexOf(" ")+1)
+
+console.log(firstname)
