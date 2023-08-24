@@ -162,14 +162,22 @@
 
 // slice()
 
-let fullname ="nandhakumar"
-let firstname;
-let lastname;
+// let fullname ="nandhakumar"
+// let firstname;
+// let lastname;
 
-//lastname=fullname.slice(6)
-//firstname=fullname.slice(0, 6)
+// //lastname=fullname.slice(6)
+// //firstname=fullname.slice(0, 6)
 
-firstname =fullname.slice(0,fullname.indexOf(" "))
-lastname =fullname.slice(fullname.indexOf(" ")+1)
+// firstname =fullname.slice(0,fullname.indexOf(" "))
+// lastname =fullname.slice(fullname.indexOf(" ")+1)
 
-console.log(firstname)
+// console.log(firstname)
+
+//method chaining
+
+let username = "max";
+
+let letter = username.charAt(0).toUpperCase().trim();
+
+console.log(letter)
