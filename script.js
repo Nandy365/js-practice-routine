@@ -176,8 +176,36 @@
 
 //method chaining
 
-let username = "max";
+// let username = "max";
 
-let letter = username.charAt(0).toUpperCase().trim();
+// let letter = username.charAt(0).toUpperCase().trim();
 
-console.log(letter)
+// console.log(letter)
+
+//if statement
+
+let age =0;
+
+if(age >=65){
+    console.log("you are old man")
+}
+
+else if(age >= 19){
+    console.log("you are a adult")
+}
+else if (age < 0 ){ 
+    console.log("you are a child")
+}
+else{
+    console.log("you are not born")
+}
+
+
+let online = false;
+
+if(online){
+    console.log("your are online bro ")
+}
+else{
+    console.log("you are offline bro")
+}
