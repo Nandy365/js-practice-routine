@@ -184,28 +184,62 @@
 
 //if statement
 
-let age =0;
+// let age =0;
 
-if(age >=65){
-    console.log("you are old man")
-}
+// if(age >=65){
+//     console.log("you are old man")
+// }
 
-else if(age >= 19){
-    console.log("you are a adult")
-}
-else if (age < 0 ){ 
-    console.log("you are a child")
-}
-else{
-    console.log("you are not born")
-}
+// else if(age >= 19){
+//     console.log("you are a adult")
+// }
+// else if (age < 0 ){ 
+//     console.log("you are a child")
+// }
+// else{
+//     console.log("you are not born")
+// }
 
 
-let online = false;
+// let online = false;
 
-if(online){
-    console.log("your are online bro ")
-}
-else{
-    console.log("you are offline bro")
+// if(online){
+//     console.log("your are online bro ")
+// }
+// else{
+//     console.log("you are offline bro")
+// }
+
+// document.getElementById("submitbtn").onclick = function(){
+
+//     if(document.getElementById("clickbtn")){
+//         console.log("your are clicked")
+//     }
+//     else{
+//         console.log("your not clicked")
+//     }
+// }
+
+//checkbox propertty
+
+document.getElementById("submitbtn").onclick = function(){
+
+    const visabtn = document.getElementById("visabtn")
+    const mastercardbtn = document.getElementById("mastercardbtn")
+    const gpaybtn = document.getElementById("gpaybtn")
+
+    if(visabtn.checked){
+        console.log("your paying with visa")
+    }
+
+    else if(mastercardbtn.checked) {
+        console.log("your paying with mastercard")
+    }
+    else if(gpaybtn.checked) {
+        console.log("your paying with gpay")
+    }
+
+    else{
+        console.log("you must select a payment type")
+    }
 }
