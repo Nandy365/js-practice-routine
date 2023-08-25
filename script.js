@@ -329,11 +329,24 @@
 
 //brack and continue
 
-for(let i = 1; i <= 30; i+=1){
+// for(let i = 1; i <= 30; i+=1){
 
-    if(i == 29 ){
-       // break;
-       continue;
+//     if(i == 29 ){
+//        // break;
+//        continue;
+//     }
+//     console.log(i)
+// } 
+
+//nested loop
+
+let symbol = window.prompt("enter a symbol")
+let row = window.prompt("enter a row")
+let colam = window.prompt("enter a colam")
+
+for(let i = 1; i<=row; i +=1){
+    for(let j =1; j<=colam; j +=1 ){
+    document.getElementById("mylable").innerHTML +=symbol;
     }
-    console.log(i)
-}
+    document.getElementById("mylable").innerHTML +="<br>"
+} 
