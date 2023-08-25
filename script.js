@@ -271,12 +271,32 @@
 
 //and or logical operators
 
-let temp = 50;
-let sunny = true;
 
-if(temp <= 0 || temp >= 30 && sunny == true){
-    console.log("to sunny")
+// let temp = 50;
+// let sunny = true;
+
+// if(temp <= 0 || temp >= 30 && sunny == true){
+//     console.log("to sunny")
+// }
+// else{
+//     console.log("it so cold")
+// }
+
+//NOT logical operators
+
+let temp = -50;
+let sunny = false;
+
+if(!(temp >= 0)){
+    console.log("its cold out side ")
 }
 else{
-    console.log("it so cold")
+    console.log("its warm out side ")
+}
+
+if(!sunny){
+    console.log("its cold out side ")
+}
+else{
+    console.log("its sunny out side ")
 }
