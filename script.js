@@ -310,11 +310,19 @@
 //     console.log("hello "+username+"bro")
 // }
 
+//do while loop  
+// let username
 
-let username
+// do{
+//     username = window.prompt("enter your name")
+// }while(username)
 
-do{
-    username = window.prompt("enter your name")
-}while(username)
+// console.log("hello"+ username)
 
-console.log("hello"+ username)
+
+//for loop
+
+for(let i = 1; i < 100; i += 1){
+
+    console.log(i)
+}
