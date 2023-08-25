@@ -351,15 +351,33 @@
 //     document.getElementById("mylable").innerHTML +="<br>"
 // }
 
-sto()
+// sto()
 
-function sto(){
-    let name = " nandy "
-    let day = " have a grat day"
-lambo(name,day)
-}
+// function sto(){
+//     let name = " nandy "
+//     let day = " have a grat day"
+// lambo(name,day)
+// }
 
-function lambo(name,day){
-    console.log("good")
-    console.log("morning"+name+day)
+// function lambo(name,day){
+//     console.log("good")
+//     console.log("morning"+name+day)
+// }
+
+//return statement
+
+let area ;
+let width;
+let hight;
+
+
+width=window.prompt("enter a width")
+hight=window.prompt("enter a hight")
+
+area=getarea(width,hight)
+
+console.log(area)
+
+function getarea(width,hight){
+     return width*hight
 }
