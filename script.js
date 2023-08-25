@@ -303,9 +303,18 @@
 
 //while loops 
 
-let username =""
+// let username =""
 
-while(username == "" || username == null){
+// while(username == "" || username == null){
+//     username = window.prompt("enter your name")
+//     console.log("hello "+username+"bro")
+// }
+
+
+let username
+
+do{
     username = window.prompt("enter your name")
-    console.log("hello "+username+"bro")
-}
+}while(username)
+
+console.log("hello"+ username)
