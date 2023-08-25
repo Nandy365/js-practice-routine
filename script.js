@@ -322,7 +322,18 @@
 
 //for loop
 
-for(let i = 1; i < 100; i += 1){
+// for(let i = 1; i < 100; i += 1){
 
+//     console.log(i)
+// }
+
+//brack and continue
+
+for(let i = 1; i <= 30; i+=1){
+
+    if(i == 29 ){
+       // break;
+       continue;
+    }
     console.log(i)
 }
