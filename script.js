@@ -284,19 +284,28 @@
 
 //NOT logical operators
 
-let temp = -50;
-let sunny = false;
+// let temp = -50;
+// let sunny = false;
 
-if(!(temp >= 0)){
-    console.log("its cold out side ")
-}
-else{
-    console.log("its warm out side ")
-}
+// if(!(temp >= 0)){
+//     console.log("its cold out side ")
+// }
+// else{
+//     console.log("its warm out side ")
+// }
 
-if(!sunny){
-    console.log("its cold out side ")
-}
-else{
-    console.log("its sunny out side ")
+// if(!sunny){
+//     console.log("its cold out side ")
+// }
+// else{
+//     console.log("its sunny out side ")
+//}
+
+//while loops 
+
+let username =""
+
+while(username == "" || username == null){
+    username = window.prompt("enter your name")
+    console.log("hello "+username+"bro")
 }
