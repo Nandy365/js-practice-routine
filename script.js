@@ -366,18 +366,36 @@
 
 //return statement
 
-let area ;
-let width;
-let hight;
+// let area ;
+// let width;
+// let hight;
 
 
-width=window.prompt("enter a width")
-hight=window.prompt("enter a hight")
+// width=window.prompt("enter a width")
+// hight=window.prompt("enter a hight")
 
-area=getarea(width,hight)
+// area=getarea(width,hight)
 
-console.log(area)
+// console.log(area)
 
-function getarea(width,hight){
-     return width*hight
+// function getarea(width,hight){
+//      return width*hight
+// }
+
+// let adult = checkage(19);
+// console.log(adult)
+
+// function checkage(age){
+//     if(age >= 23){
+//         return true;
+//     }
+//     else{
+//     return false;
+//     }
+// }
+
+checkwinner(true)
+
+function checkwinner(win){
+    win ? console.log("you win"):console.log("you lose")
 }
