@@ -382,6 +382,8 @@
 //      return width*hight
 // }
 
+//ternary operator
+
 // let adult = checkage(19);
 // console.log(adult)
 
@@ -394,8 +396,25 @@
 //     }
 // }
 
-checkwinner(true)
+// checkwinner(true)
 
-function checkwinner(win){
-    win ? console.log("you win"):console.log("you lose")
-}
+// function checkwinner(win){
+//     win ? console.log("you win"):console.log("you lose")
+// }
+
+//template literals
+
+let username = "nandy"
+let age = 22;
+let city ="ooty"
+
+console.log(`my name is ${username}`)
+console.log(`my age is ${age}`)
+console.log(`my place is ${city}`)
+
+let all =
+` my name is ${username} 
+my age is ${age}
+my place is ${city}`
+
+console.log(all)
