@@ -408,13 +408,13 @@ let username = "nandy"
 let age = 22;
 let city ="ooty"
 
-console.log(`my name is ${username}`)
-console.log(`my age is ${age}`)
-console.log(`my place is ${city}`)
+// console.log(`my name is ${username}`)
+// console.log(`my age is ${age}`)
+// console.log(`my place is ${city}`)
 
 let all =
 ` my name is ${username} 
 my age is ${age}
 my place is ${city}`
 
-console.log(all)
+document.getElementById("mylable").innerHTML=all
