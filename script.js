@@ -404,17 +404,39 @@
 
 //template literals
 
-let username = "nandy"
-let age = 22;
-let city ="ooty"
+// let username = "nandy"
+// let age = 22;
+// let city ="ooty"
 
-// console.log(`my name is ${username}`)
-// console.log(`my age is ${age}`)
-// console.log(`my place is ${city}`)
+// // console.log(`my name is ${username}`)
+// // console.log(`my age is ${age}`)
+// // console.log(`my place is ${city}`)
 
-let all =
-` my name is ${username} 
-my age is ${age}
-my place is ${city}`
+// let all =
+// ` my name is ${username} 
+// my age is ${age}
+// my place is ${city}`
 
-document.getElementById("mylable").innerHTML=all
+// document.getElementById("mylable").innerHTML=all
+
+//toLocaleString()
+
+//number.toLocaleString(locale, {})
+
+//locale = specify that language ()
+
+let mynum = 100;
+
+mynum = mynum.toLocaleString("EN-US")
+mynum = mynum.toLocaleString("hi-IN")
+mynum = mynum.toLocaleString("de-DE")
+
+mynum = mynum.toLocaleString("en-US",{style: "currency" , currency:"USD"})
+mynum  = mynum.toLocaleString("hi-IN",{style:"currency" , currency:"IND"})
+mynum=mynum.toLocaleString("de-DE",{style:"currency",currency:"EUR"})
+
+mynum = mynum.toLocaleString(undefined, {style: "percent"})
+
+mynum = mynum.toLocaleString(undefined, {style:"unit", unit:"celsius"})
+
+console.log(mynum)
