@@ -442,21 +442,51 @@
 // console.log(mynum)
 
 
-const answer = Math.floor(Math.random() * 10 + 1);
-let gusses = 0;
+// const answer = Math.floor(Math.random() * 10 + 1);
+// let gusses = 0;
 
-document.getElementById("submitbutton").onclick = function() {
+// document.getElementById("submitbutton").onclick = function() {
 
-    let guess = document.getElementById("gussfield").value
-    gusses+=1;
+//     let guess = document.getElementById("gussfield").value
+//     gusses+=1;
 
-    if(guess == gusses){
-        alert(`${answer}is the #. It took you ${gusses} guess`)
+//     if(guess == gusses){
+//         alert(`${answer}is the #. It took you ${gusses} guess`)
+//     }
+//     else if( guess < gusses){
+//         alert("it too small")
+//     }
+//     else{
+//         alert(' it too big ')
+//     }
+// }
+
+//temperature conversion program
+document.getElementById("submitbutton").onclick = function(){
+
+    let temp;
+    if(document.getElementById("Cbutton").checked){
+        temp = document.getElementById("textBox").value;
+        temp = Number(temp)
+        temp = toCelsius(temp)
+        document.getElementById("templable").innerHTML = temp +"°C"
     }
-    else if( guess < gusses){
-        alert("it too small")
+
+    else if(document.getElementById("Fbutton").checked){
+        temp = document.getElementById("textBox").value;
+        temp = Number(temp)
+        temp = toFahrenheit(temp)
+        document.getElementById("templable").innerHTML = temp +"°F"
     }
+
     else{
-        alert(' it too big ')
+        document.getElementById("temlable").innerHTML +"select a unit "
     }
+}
+
+function toCelsius(temp){
+    return(temp -32) *(5/9)
+}
+function toFahrenheit(temp){
+    return temp * 9 / 5 +35
 }
