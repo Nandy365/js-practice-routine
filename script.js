@@ -425,18 +425,38 @@
 
 //locale = specify that language ()
 
-let mynum = 100;
+// let mynum = 100;
 
-mynum = mynum.toLocaleString("EN-US")
-mynum = mynum.toLocaleString("hi-IN")
-mynum = mynum.toLocaleString("de-DE")
+// mynum = mynum.toLocaleString("EN-US")
+// mynum = mynum.toLocaleString("hi-IN")
+// mynum = mynum.toLocaleString("de-DE")
 
-mynum = mynum.toLocaleString("en-US",{style: "currency" , currency:"USD"})
-mynum  = mynum.toLocaleString("hi-IN",{style:"currency" , currency:"IND"})
-mynum=mynum.toLocaleString("de-DE",{style:"currency",currency:"EUR"})
+// mynum = mynum.toLocaleString("en-US",{style: "currency" , currency:"USD"})
+// mynum  = mynum.toLocaleString("hi-IN",{style:"currency" , currency:"IND"})
+// mynum=mynum.toLocaleString("de-DE",{style:"currency",currency:"EUR"})
 
-mynum = mynum.toLocaleString(undefined, {style: "percent"})
+// mynum = mynum.toLocaleString(undefined, {style: "percent"})
 
-mynum = mynum.toLocaleString(undefined, {style:"unit", unit:"celsius"})
+// mynum = mynum.toLocaleString(undefined, {style:"unit", unit:"celsius"})
 
-console.log(mynum)
+// console.log(mynum)
+
+
+const answer = Math.floor(Math.random() * 10 + 1);
+let gusses = 0;
+
+document.getElementById("submitbutton").onclick = function() {
+
+    let guess = document.getElementById("gussfield").value
+    gusses+=1;
+
+    if(guess == gusses){
+        alert(`${answer}is the #. It took you ${gusses} guess`)
+    }
+    else if( guess < gusses){
+        alert("it too small")
+    }
+    else{
+        alert(' it too big ')
+    }
+}
