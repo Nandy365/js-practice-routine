@@ -496,6 +496,13 @@
 
 let cars = ["audi","bmw","lambo"]
 
-cars [0] = "coconut"
+//cars [0] = "coconut"
+cars.push("lemon") //add an element
+cars.pop() //removes last element
+cars.unshift("mango")//add element to beginning
+cars.shift()//remove element from beginning
 
-console.log(cars)
+let length = cars.length;
+let index = cars.indexOf("bmw")
+
+console.log(index)
