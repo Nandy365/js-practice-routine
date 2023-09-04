@@ -462,31 +462,38 @@
 // }
 
 //temperature conversion program
-document.getElementById("submitbutton").onclick = function(){
+// document.getElementById("submitbutton").onclick = function(){
 
-    let temp;
-    if(document.getElementById("Cbutton").checked){
-        temp = document.getElementById("textBox").value;
-        temp = Number(temp)
-        temp = toCelsius(temp)
-        document.getElementById("templable").innerHTML = temp +"°C"
-    }
+//     let temp;
+//     if(document.getElementById("Cbutton").checked){
+//         temp = document.getElementById("textBox").value;
+//         temp = Number(temp)
+//         temp = toCelsius(temp)
+//         document.getElementById("templable").innerHTML = temp +"°C"
+//     }
 
-    else if(document.getElementById("Fbutton").checked){
-        temp = document.getElementById("textBox").value;
-        temp = Number(temp)
-        temp = toFahrenheit(temp)
-        document.getElementById("templable").innerHTML = temp +"°F"
-    }
+//     else if(document.getElementById("Fbutton").checked){
+//         temp = document.getElementById("textBox").value;
+//         temp = Number(temp)
+//         temp = toFahrenheit(temp)
+//         document.getElementById("templable").innerHTML = temp +"°F"
+//     }
 
-    else{
-        document.getElementById("temlable").innerHTML +"select a unit "
-    }
-}
+//     else{
+//         document.getElementById("temlable").innerHTML +"select a unit "
+//     }
+// }
 
-function toCelsius(temp){
-    return(temp -32) *(5/9)
-}
-function toFahrenheit(temp){
-    return temp * 9 / 5 +35
-}
+// function toCelsius(temp){
+//     return(temp -32) *(5/9)
+// }
+// function toFahrenheit(temp){
+//     return temp * 9 / 5 +35
+// }
+
+
+//array
+
+let cars = ["audi","bmw","lambo"]
+
+console.log(cars[2])
