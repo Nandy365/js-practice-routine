@@ -496,4 +496,6 @@
 
 let cars = ["audi","bmw","lambo"]
 
-console.log(cars[2])
+cars [0] = "coconut"
+
+console.log(cars)
