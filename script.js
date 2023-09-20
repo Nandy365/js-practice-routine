@@ -537,16 +537,22 @@
 
 //2D Arrays 
 
-let vegetable = ["carrots","onions","potatoes"]
-let fruits = ["apple","oranges","bananas"]
-let meats = ["eggs","chicken","fish"]
+// let vegetable = ["carrots","onions","potatoes"]
+// let fruits = ["apple","oranges","bananas"]
+// let meats = ["eggs","chicken","fish"]
 
-let grocery = [vegetable,fruits,meats]
+// let grocery = [vegetable,fruits,meats]
 
-grocery[2][1]="beef"
+// grocery[2][1]="beef"
 
-for(let list of grocery){
-    for(let food of list){
-        console.log(food)
-    }
-}
+// for(let list of grocery){
+//     for(let food of list){
+//         console.log(food)
+//     }
+// }
+
+let numbers = [1,2,3,4,5,6,7,8,9]
+
+let maximum = Math.max(...numbers)
+
+console.log(maximum)
