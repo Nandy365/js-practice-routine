@@ -549,10 +549,19 @@
 //     for(let food of list){
 //         console.log(food)
 //     }
-// }
+// }-
 
-let numbers = [1,2,3,4,5,6,7,8,9]
+//spread operato
 
-let maximum = Math.max(...numbers)
+// let numbers = [1,2,3,4,5,6,7,8,9]
 
-console.log(maximu
+// let maximum = Math.max(...numbers)
+
+// console.log(maximum)
+
+
+let class1 = ["nandy","bhuvi","raja"]
+let class2 = ["sundar","ramesh","achu"]
+
+class1.push(...class2);
+console.log(...class1)
