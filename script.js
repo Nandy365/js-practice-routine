@@ -494,15 +494,31 @@
 
 //array
 
-let cars = ["audi","bmw","lambo"]
+// let cars = ["audi","bmw","lambo"]
 
-//cars [0] = "coconut"
-cars.push("lemon") //add an element
-cars.pop() //removes last element
-cars.unshift("mango")//add element to beginning
-cars.shift()//remove element from beginning
+// //cars [0] = "coconut"
+// cars.push("lemon") //add an element
+// cars.pop() //removes last element
+// cars.unshift("mango")//add element to beginning
+// cars.shift()//remove element from beginning
 
-let length = cars.length;
-let index = cars.indexOf("bmw")
+// let length = cars.length;
+// let index = cars.indexOf("bmw")
 
-console.log(index)
+// console.log(index)
+
+//loop through an array
+
+//let prices = [1,2,3,4,5];
+
+// for(let i = prices.length -1; i >= 0; i-=1){
+//     console.log(prices[i])
+
+//}
+
+
+let prices = [1,2,3,4,5]
+
+for (i = 0; i < prices.length; i+=1){
+    console.log(prices[i])
+}
