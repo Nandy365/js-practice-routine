@@ -525,11 +525,28 @@
 
 //sort an array of strings
 
-let cars = ["audi","bmw","benze","tata","rangerover"]
+// let cars = ["audi","bmw","benze","tata","rangerover"]
 
-cars = cars.sort()
-cars = cars.sort().reverse()
+// cars = cars.sort()
+// cars = cars.sort().reverse()
 
-for(let car of cars){
-    console.log(car)
+// for(let car of cars){
+//     console.log(car)
+// }
+
+
+//2D Arrays 
+
+let vegetable = ["carrots","onions","potatoes"]
+let fruits = ["apple","oranges","bananas"]
+let meats = ["eggs","chicken","fish"]
+
+let grocery = [vegetable,fruits,meats]
+
+grocery[2][1]="beef"
+
+for(let list of grocery){
+    for(let food of list){
+        console.log(food)
+    }
 }
