@@ -509,16 +509,16 @@
 
 //loop through an array
 
-//let prices = [1,2,3,4,5];
+let prices = [1,2,3,4,5];
 
-// for(let i = prices.length -1; i >= 0; i-=1){
-//     console.log(prices[i])
-
-//}
-
-
-let prices = [1,2,3,4,5]
-
-for (i = 0; i < prices.length; i+=1){
+for(let i = prices.length -1; i >= 0; i-=1){
     console.log(prices[i])
+
+}
+
+
+let pricess = [1,2,3,4,5]
+
+for (i = 0; i < pricess.length; i+=1){
+    console.log(pricess[i])
 }
