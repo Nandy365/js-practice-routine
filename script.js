@@ -560,8 +560,29 @@
 // console.log(maximum)
 
 
-let class1 = ["nandy","bhuvi","raja"]
-let class2 = ["sundar","ramesh","achu"]
+// let class1 = ["nandy","bhuvi","raja"]
+// let class2 = ["sundar","ramesh","achu"]
 
-class1.push(...class2);
-console.log(...class1)
+// class1.push(...class2);
+// console.log(...class1)
+
+//rest parameters
+
+let a = 2
+let b = 3
+let c = 5
+let d = 9
+let e = 1
+
+console.log(sum(a,b,c,d))
+
+function sum(a,b){
+    return(a+b)
+}
+
+function sum(a,b,c){
+    return(a+b+c)
+}
+function sum(a,b,c,d){
+    return(a+b+c+d)
+}
