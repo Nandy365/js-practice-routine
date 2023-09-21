@@ -576,13 +576,21 @@ let e = 1
 
 console.log(sum(a,b,c,d))
 
-function sum(a,b){
-    return(a+b)
+function sum(...number){
+    let total = 0
+    for(let numbers of number)
+    total += numbers
+return(total)
 }
 
-function sum(a,b,c){
-    return(a+b+c)
-}
-function sum(a,b,c,d){
-    return(a+b+c+d)
-}
+
+// function sum(a,b){
+//     return(a+b)
+// }
+
+// function sum(a,b,c){
+//     return(a+b+c)
+// }
+// function sum(a,b,c,d){
+//     return(a+b+c+d)
+// }
