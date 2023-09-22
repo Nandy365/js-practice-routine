@@ -568,20 +568,20 @@
 
 //rest parameters
 
-let a = 2
-let b = 3
-let c = 5
-let d = 9
-let e = 1
+// let a = 2
+// let b = 3
+// let c = 5
+// let d = 9
+// let e = 1
 
-console.log(sum(a,b,c,d))
+// console.log(sum(a,b,c,d))
 
-function sum(...number){
-    let total = 0
-    for(let numbers of number)
-    total += numbers
-return(total)
-}
+// function sum(...number){
+//     let total = 0
+//     for(let numbers of number)
+//     total += numbers
+// return(total)
+// }
 
 
 // function sum(a,b){
@@ -594,3 +594,21 @@ return(total)
 // function sum(a,b,c,d){
 //     return(a+b+c+d)
 // }
+
+let total = sum(2,4)
+
+displayDOM(total)
+displayConsol(total)
+
+function sum(x,y){
+    let  result = x+y
+    return result
+}
+
+function displayConsol(output){
+    console.log(output)
+}
+
+function displayDOM(output){
+    document.getElementById("templable").innerHTML = output
+}
