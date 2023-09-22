@@ -595,14 +595,24 @@
 //     return(a+b+c+d)
 // }
 
-let total = sum(2,4)
+//callback
 
-displayDOM(total)
-displayConsol(total)
+// let total = sum(2,4)
 
-function sum(x,y){
-    let  result = x+y
-    return result
+// displayDOM(total)
+// displayConsol(total)
+
+// function sum(x,y){
+//     let  result = x+y
+//     return result
+// }
+
+sum(4,5,displayDOM,displayConsol)
+
+function sum(x,y,callback,displayConsol){
+    let result = x+y;
+    callback(result)
+    displayConsol(result)
 }
 
 function displayConsol(output){
