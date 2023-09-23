@@ -607,18 +607,48 @@
 //     return result
 // }
 
-sum(4,5,displayDOM,displayConsol)
+// sum(4,5,displayDOM,displayConsol)
 
-function sum(x,y,callback,displayConsol){
-    let result = x+y;
-    callback(result)
-    displayConsol(result)
+// function sum(x,y,callback,displayConsol){
+//     let result = x+y;
+//     callback(result)
+//     displayConsol(result)
+// }
+
+// function displayConsol(output){
+//     console.log(output)
+// }
+
+// function displayDOM(output){
+//     document.getElementById("templable").innerHTML = output
+// }sum(4,5,displayDOM,displayConsol)
+
+// function sum(x,y,callback,displayConsol){
+//     let result = x+y;
+//     callback(result)
+//     displayConsol(result)
+// }
+
+// function displayConsol(output){
+//     console.log(output)
+// }
+
+// function displayDOM(output){
+//     document.getElementById("templable").innerHTML = output
+// }
+
+
+//array .forEach
+
+let  students = ["nandy","bhuvi","sundar"]
+
+students.forEach(capitlize)
+students.forEach(print)
+
+function capitlize(element,index,array){
+    array[index] = element[0].toUpperCase() + element.substring(1)
 }
 
-function displayConsol(output){
-    console.log(output)
-}
-
-function displayDOM(output){
-    document.getElementById("templable").innerHTML = output
+function print(element){
+    console.log(element)
 }
