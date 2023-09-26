@@ -640,15 +640,37 @@
 
 //array .forEach
 
-let  students = ["nandy","bhuvi","sundar"]
+// let  students = ["nandy","bhuvi","sundar"]
 
-students.forEach(capitlize)
-students.forEach(print)
+// students.forEach(capitlize)
+// students.forEach(print)
 
-function capitlize(element,index,array){
-    array[index] = element[0].toUpperCase() + element.substring(1)
+// function capitlize(element,index,array){
+//     array[index] = element[0].toUpperCase() + element.substring(1)
+// }
+
+// function print(element){
+//     console.log(element)
+// }
+
+
+//array map 
+
+let numbers = [3,4,5,6,7,8,9]
+
+let squares = numbers.map(square)
+
+let cubes =numbers.map(cube)
+
+cubes.forEach(print)
+
+function square(element){
+    return Math.pow(element, 2)
 }
 
+function cube (element){
+    return Math.pow(element, 6) 
+}
 function print(element){
     console.log(element)
-}
+}   
