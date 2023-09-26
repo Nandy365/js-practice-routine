@@ -656,21 +656,38 @@
 
 //array map 
 
-let numbers = [3,4,5,6,7,8,9]
+// let numbers = [3,4,5,6,7,8,9]
 
-let squares = numbers.map(square)
+// let squares = numbers.map(square)
 
-let cubes =numbers.map(cube)
+// let cubes =numbers.map(cube)
 
-cubes.forEach(print)
+// cubes.forEach(print)
 
-function square(element){
-    return Math.pow(element, 2)
+// function square(element){
+//     return Math.pow(element, 2)
+// }
+
+// function cube (element){
+//     return Math.pow(element, 6) 
+// }
+// function print(element){
+//     console.log(element)
+// }   
+
+
+// array filter()
+
+
+let ages = [12,33,66,75,89,]
+let adults = ages.filter(checkAge)
+
+adults.forEach(print)
+
+function checkAge(element){
+    return element >= 18
 }
 
-function cube (element){
-    return Math.pow(element, 6) 
-}
 function print(element){
     console.log(element)
-}   
+}
