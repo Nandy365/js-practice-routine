@@ -694,12 +694,32 @@
 
 //array.reduce
 
-let prices = [1,3,4,6,7,944,5,]
-let total = prices.reduce(checkOut)
+// let prices = [1,3,4,6,7,944,5,]
+// let total = prices.reduce(checkOut)
 
-console.log(`this is your total; bill $`+total)
+// console.log(`this is your total; bill $`+total)
 
-function checkOut(total,element){
-    return total+element
+// function checkOut(total,element){
+//     return total+element
+// }
+
+// sort an array of numbers
+
+let grades = [100,80,70,60,50]
+
+grades = grades.sort(aescendingSord)
+
+grades.forEach(print)
+
+function descendingSord(x,y){
+    return x -y;
+}
+
+function aescendingSord(x,y){
+    return y - x
+}
+
+function print(element){
+    console.log(element)
 }
 
