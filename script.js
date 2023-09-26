@@ -722,15 +722,29 @@
 // function print(element){
 //     console.log(element)
 // }
+//function expression
 
-let counts = 0;
+// let counts = 0;
 
-function increaseCounts() {
-    counts +=1
-    document.getElementById("myLable").innerHTML = counts
+// function increaseCounts() {
+//     counts +=1
+//     document.getElementById("myLable").innerHTML = counts
+// }
+
+// function decreaseCounts() {
+//     counts -=1
+//     document.getElementById("myLable").innerHTML = counts
+// }
+
+let count = 0;
+
+
+document.getElementById("increasebutton").onclick = function() {
+    count +=1
+    document.getElementById("myLable").innerHTML = count
 }
 
-function decreaseCounts() {
-    counts -=1
-    document.getElementById("myLable").innerHTML = counts
+document.getElementById("decreasebutton").onclick = function() {
+    count -=1
+    document.getElementById("myLable").innerHTML = count
 }
