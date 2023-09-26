@@ -705,21 +705,32 @@
 
 // sort an array of numbers
 
-let grades = [100,80,70,60,50]
+// let grades = [100,80,70,60,50]
 
-grades = grades.sort(aescendingSord)
+// grades = grades.sort(aescendingSord)
 
-grades.forEach(print)
+// grades.forEach(print)
 
-function descendingSord(x,y){
-    return x -y;
+// function descendingSord(x,y){
+//     return x -y;
+// }
+
+// function aescendingSord(x,y){
+//     return y - x
+// }
+
+// function print(element){
+//     console.log(element)
+// }
+
+let counts = 0;
+
+function increaseCounts() {
+    counts +=1
+    document.getElementById("myLable").innerHTML = counts
 }
 
-function aescendingSord(x,y){
-    return y - x
+function decreaseCounts() {
+    counts -=1
+    document.getElementById("myLable").innerHTML = counts
 }
-
-function print(element){
-    console.log(element)
-}
-
