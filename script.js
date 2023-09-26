@@ -679,15 +679,27 @@
 // array filter()
 
 
-let ages = [12,33,66,75,89,]
-let adults = ages.filter(checkAge)
+// let ages = [12,33,66,75,89,]
+// let adults = ages.filter(checkAge)
 
-adults.forEach(print)
+// adults.forEach(print)
 
-function checkAge(element){
-    return element >= 18
+// function checkAge(element){
+//     return element >= 18
+// }
+
+// function print(element){
+//    console.log(element)
+//}
+
+//array.reduce
+
+let prices = [1,3,4,6,7,944,5,]
+let total = prices.reduce(checkOut)
+
+console.log(`this is your total; bill $`+total)
+
+function checkOut(total,element){
+    return total+element
 }
 
-function print(element){
-    console.log(element)
-}
