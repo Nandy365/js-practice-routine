@@ -811,24 +811,63 @@
 
 
 
-const store = new Map([
-    ["lambo",200000],
-    ["bmw",333],
-    ["audi",332],
-    ["benze",3332]
-])
+// const store = new Map([
+//     ["lambo",200000],
+//     ["bmw",333],
+//     ["audi",332],
+//     ["benze",3332]
+// ])
 
-//store.set("RR",657576)
-//store.delete("bmw")
-//console.log(store.has("lambo"))
+// //store.set("RR",657576)
+// //store.delete("bmw")
+// //console.log(store.has("lambo"))
 
-console.log(store.size)
+// console.log(store.size)
 
-// let shopingcart = 0
+// // let shopingcart = 0
 
-// shopingcart +=store.get("lambo")
-// shopingcart +=store.get("bmw")
+// // shopingcart +=store.get("lambo")
+// // shopingcart +=store.get("bmw")
 
-// console.log(shopingcart)
+// // console.log(shopingcart)
 
-store.forEach((value,key)=>console.log(`${value} ${key}`))
+// store.forEach((value,key)=>console.log(`${value} ${key}`))
+
+const car = {
+    model:"mustank",
+    color:"black",
+    year:"2017",
+
+    driver : function(){
+        console.log("you need driver this car you need driving license ")
+    },
+    brack :function(){
+        console.log("good brake in this car")
+    }
+}
+console.log(car.model)
+console.log(car.year)
+console.log(car.color)
+
+car.driver()
+car.brack()
+
+const car1 = {
+    model:"lamborghini",
+    color:"black",
+    year:"2017",
+
+    driver : function(){
+        console.log("you need driver this car you need driving license ")
+    },
+    brack :function(){
+        console.log("good brake in this car")
+    }
+}
+
+console.log(car1.model)
+console.log(car1.year)
+console.log(car1.color)
+
+car1.brack()
+car1.driver()
