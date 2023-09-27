@@ -818,7 +818,8 @@ const store = new Map([
     ["benze",3332]
 ])
 
-store.set("RR",657576)
+//store.set("RR",657576)
+store.delete("bmw")
 
 // let shopingcart = 0
 
