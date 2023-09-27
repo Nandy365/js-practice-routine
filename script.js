@@ -833,41 +833,50 @@
 
 // store.forEach((value,key)=>console.log(`${value} ${key}`))
 
-const car = {
-    model:"mustank",
-    color:"black",
-    year:"2017",
+//
+//Object 
 
-    driver : function(){
-        console.log("you need driver this car you need driving license ")
-    },
-    brack :function(){
-        console.log("good brake in this car")
-    }
-}
-console.log(car.model)
-console.log(car.year)
-console.log(car.color)
+// const car = {
+//     model:"mustank",
+//     color:"black",
+//     year:"2017",
 
-car.driver()
-car.brack()
+//     driver : function(){
+//         console.log("you need driver this car you need driving license ")
+//     },
+//     brack :function(){
+//         console.log("good brake in this car")
+//     }
+// }
+// console.log(car.model)
+// console.log(car.year)
+// console.log(car.color)
 
-const car1 = {
-    model:"lamborghini",
-    color:"black",
-    year:"2017",
+// car.driver()
+// car.brack()
 
-    driver : function(){
-        console.log("you need driver this car you need driving license ")
-    },
-    brack :function(){
-        console.log("good brake in this car")
-    }
-}
+// const car1 = {
+//     model:"lamborghini",
+//     color:"black",
+//     year:"2017",
 
-console.log(car1.model)
-console.log(car1.year)
-console.log(car1.color)
+//     driver : function(){
+//         console.log("you need driver this car you need driving license ")
+//     },
+//     brack :function(){
+//         console.log("good brake in this car")
+//     }
+// }
 
-car1.brack()
-car1.driver()
+// console.log(car1.model)
+// console.log(car1.year)
+// console.log(car1.color)
+
+// car1.brack()
+// car1.driver()
+
+//this 
+
+this.name ="nandy"
+
+console.log(this.name)
