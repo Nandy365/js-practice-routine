@@ -752,7 +752,7 @@
 
 //arrow function 
 
-const hello = function(username){
-    console.log(`my name is ${username}`)
-}
+const hello = (username) =>console.log(`my name is ${username}`)
+
 hello("Nandy")
+
