@@ -736,15 +736,23 @@
 //     document.getElementById("myLable").innerHTML = counts
 // }
 
-let count = 0;
+// let count = 0;
 
 
-document.getElementById("increasebutton").onclick = function() {
-    count +=1
-    document.getElementById("myLable").innerHTML = count
+// document.getElementById("increasebutton").onclick = function() {
+//     count +=1
+//     document.getElementById("myLable").innerHTML = count
+// }
+
+// document.getElementById("decreasebutton").onclick = function() {
+//     count -=1
+//     document.getElementById("myLable").innerHTML = count
+//}
+ 
+
+//arrow function 
+
+const hello = function(username){
+    console.log(`my name is ${username}`)
 }
-
-document.getElementById("decreasebutton").onclick = function() {
-    count -=1
-    document.getElementById("myLable").innerHTML = count
-}
+hello("Nandy")
