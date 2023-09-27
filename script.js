@@ -752,7 +752,12 @@
 
 //arrow function 
 
-const hello = (username) =>console.log(`my name is ${username}`)
+// const hello = (username) =>console.log(`my name is ${username
+// }`)
 
-hello("Nandy")
+// hello("Nandy")
 
+let grades = [20,30,69,57,76,89]
+
+grades.sort((x,y) => x-y )
+grades.forEach((element)=> console.log(element))
