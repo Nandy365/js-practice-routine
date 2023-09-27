@@ -757,7 +757,30 @@
 
 // hello("Nandy")
 
-let grades = [20,30,69,57,76,89]
+// let grades = [20,30,69,57,76,89]
 
-grades.sort((x,y) => x-y )
-grades.forEach((element)=> console.log(element))
+// grades.sort((x,y) => x-y )
+// grades.forEach((element)=> console.log(element))
+
+
+ //shuffle an array
+
+let cards = ["22","2","3","4","5","h","g","8","9"]
+
+shuffle(cards);
+
+cards.forEach(card => console.log(card))
+
+function shuffle(array){
+    let currentIndex = array.length;
+
+    while(currentIndex != 0){
+        let randomIndex = Math.floor(Math.random() * array.length)
+        currentIndex -=1
+
+        let temp = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temp
+    }
+    return array;
+}
