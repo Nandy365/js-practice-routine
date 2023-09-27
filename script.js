@@ -818,11 +818,13 @@ const store = new Map([
     ["benze",3332]
 ])
 
-let shopingcart = 0
+store.set("RR",657576)
 
-shopingcart +=store.get("lambo")
-shopingcart +=store.get("bmw")
+// let shopingcart = 0
 
-console.log(shopingcart)
+// shopingcart +=store.get("lambo")
+// shopingcart +=store.get("bmw")
+
+// console.log(shopingcart)
 
 store.forEach((value,key)=>console.log(`${value} ${key}`))
