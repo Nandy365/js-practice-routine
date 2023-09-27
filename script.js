@@ -765,22 +765,45 @@
 
  //shuffle an array
 
-let cards = ["22","2","3","4","5","h","g","8","9"]
+// let cards = ["22","2","3","4","5","h","g","8","9"]
 
-shuffle(cards);
+// shuffle(cards);
 
-cards.forEach(card => console.log(card))
+// cards.forEach(card => console.log(card))
 
-function shuffle(array){
-    let currentIndex = array.length;
+// function shuffle(array){
+//     let currentIndex = array.length;
 
-    while(currentIndex != 0){
-        let randomIndex = Math.floor(Math.random() * array.length)
-        currentIndex -=1
+//     while(currentIndex != 0){
+//         let randomIndex = Math.floor(Math.random() * array.length)
+//         currentIndex -=1
 
-        let temp = array[currentIndex];
-        array[currentIndex] = array[randomIndex];
-        array[randomIndex] = temp
-    }
-    return array;
+//         let temp = array[currentIndex];
+//         array[currentIndex] = array[randomIndex];
+//         array[randomIndex] = temp
+//     }
+//     return array;
+// }
+
+
+
+let userName = "nandy"
+let userAge = 22;
+
+login();
+
+
+function login(){
+
+displayuserage();
+displayusername();
+
+    
+function displayusername(){
+    console.log(`My name is ${userName}`)
+}
+
+function displayuserage(){
+    console.log(`My age is ${userAge}`)
+}
 }
