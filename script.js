@@ -787,23 +787,42 @@
 
 
 
-let userName = "nandy"
-let userAge = 22;
+// let userName = "nandy"
+// let userAge = 22;
 
-login();
+// login();
 
 
-function login(){
+// function login(){
 
-displayuserage();
-displayusername();
+// displayuserage();
+// displayusername();
 
     
-function displayusername(){
-    console.log(`My name is ${userName}`)
-}
+// function displayusername(){
+//     console.log(`My name is ${userName}`)
+// }
 
-function displayuserage(){
-    console.log(`My age is ${userAge}`)
-}
-}
+// function displayuserage(){
+//     console.log(`My age is ${userAge}`)
+// }
+// }
+
+
+
+
+const store = new Map([
+    ["lambo",200000],
+    ["bmw",333],
+    ["audi",332],
+    ["benze",3332]
+])
+
+let shopingcart = 0
+
+shopingcart +=store.get("lambo")
+shopingcart +=store.get("bmw")
+
+console.log(shopingcart)
+
+store.forEach((value,key)=>console.log(`${value} ${key}`))
