@@ -934,21 +934,81 @@
 
 //static keyword
 
-class Car{
+// class Car{
 
-    static numberOfCars = 0
+//     static numberOfCars = 0
 
-    constructor(model){
-        this.model = model;
-        Car.numberOfCars += 1;
-    }
-    startrace(){
-        console.log("3....2....1.GO")
+//     constructor(model){
+//         this.model = model;
+//         Car.numberOfCars += 1;
+//     }
+//     startrace(){
+//         console.log("3....2....1.GO")
+//     }
+// }
+// const car1 = new Car("lamborghini");
+// const car2 = new Car("mustank");
+// const car3 = new Car("bugatti")
+
+// console.log(Car.numberOfCars)
+// car2.startrace()
+
+//inheritance
+
+class animal {
+    alive = true;
+
+eat(){
+    console.log(`now ${this.name} was eating`)
+}
+sleep(){
+    console.log(`now ${this.name} was sleeping`)
+}
+}
+
+class Rabbit extends animal{
+
+   
+    name = "rabbit";
+
+   
+    run(){
+        console.log(`now ${this.name} wsa running`)
     }
 }
-const car1 = new Car("lamborghini");
-const car2 = new Car("mustank");
-const car3 = new Car("bugatti")
 
-console.log(Car.numberOfCars)
-car2.startrace()
+class Fish extends animal{
+
+   
+    name = "fish";
+
+    swim(){
+        console.log(`now ${this.name} wsa swiming`)
+    }
+}
+
+class Hawk extends animal{
+
+    name = "hawk";
+
+  
+    fly(){
+        console.log(`now ${this.name} wsa flying`)
+    }
+}
+
+const rabbit = new Rabbit();
+const fish = new Fish();
+const hawk = new Hawk();
+
+console.log(rabbit.alive)
+
+fish.eat()
+fish.swim()
+console.log(hawk.alive)
+hawk.fly()
+hawk.eat()
+
+console.log(rabbit.alive)
+rabbit.run()
+rabbit.eat()
