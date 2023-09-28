@@ -904,30 +904,51 @@
 // player1.pause()
 // player2.exit()
 
+//constructor
 
-class student{
+// class student{
 
-    constructor(name,age,gpa){
-        this.name = name
-        this.age = age
-        this.gpa = gpa
+//     constructor(name,age,gpa){
+//         this.name = name
+//         this.age = age
+//         this.gpa = gpa
         
+//     }
+//     study(){
+//         console.log(`${this.name} started studing`)
+//     }
+// }
+
+// const student1 = new student("nandy",22,10)
+// const student2 = new student("bhuvi",22,10)
+
+// console.log(student1.name)
+// console.log(student1.age)
+// console.log(student1.gpa)
+
+// console.log(student2.name)
+// console.log(student2.age)
+// console.log(student2.gpa)
+
+// student1.study()
+
+//static keyword
+
+class Car{
+
+    static numberOfCars = 0
+
+    constructor(model){
+        this.model = model;
+        Car.numberOfCars += 1;
     }
-    study(){
-        console.log(`${this.name} started studing`)
+    startrace(){
+        console.log("3....2....1.GO")
     }
 }
+const car1 = new Car("lamborghini");
+const car2 = new Car("mustank");
+const car3 = new Car("bugatti")
 
-const student1 = new student("nandy",22,10)
-const student2 = new student("bhuvi",22,10)
-
-console.log(student1.name)
-console.log(student1.age)
-console.log(student1.gpa)
-
-console.log(student2.name)
-console.log(student2.age)
-console.log(student2.gpa)
-
-student1.study()
-
+console.log(Car.numberOfCars)
+car2.startrace()
