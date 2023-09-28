@@ -877,6 +877,29 @@
 
 //this 
 
-this.name ="nandy"
+// this.name ="nandy"
 
-console.log(this.name)
+// console.log(this.name)
+
+
+class players{
+    score = 0;
+
+    pause(){
+        console.log("you pause the game")
+    }
+    exit(){
+        console.log("player exit the game")
+    }
+}
+
+const player1 = new players()
+const player2 = new players()
+
+player1 .score += 22
+player2 .score = 0
+console.log(player1.score)
+console.log(player2.score)
+
+player1.pause()
+player2.exit()
