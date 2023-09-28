@@ -882,24 +882,51 @@
 // console.log(this.name)
 
 
-class players{
-    score = 0;
+// class players{
+//     score = 0;
 
-    pause(){
-        console.log("you pause the game")
+//     pause(){
+//         console.log("you pause the game")
+//     }
+//     exit(){
+//         console.log("player exit the game")
+//     }
+// }
+
+// const player1 = new players()
+// const player2 = new players()
+
+// player1 .score += 22
+// player2 .score = 0
+// console.log(player1.score)
+// console.log(player2.score)
+
+// player1.pause()
+// player2.exit()
+
+
+class student{
+
+    constructor(name,age,gpa){
+        this.name = name
+        this.age = age
+        this.gpa = gpa
+        
     }
-    exit(){
-        console.log("player exit the game")
+    study(){
+        console.log(`${this.name} i am studing`)
     }
 }
 
-const player1 = new players()
-const player2 = new players()
+const student1 = new student("nandy",22,10)
+const student2 = new student("bhuvi",22,10)
 
-player1 .score += 22
-player2 .score = 0
-console.log(player1.score)
-console.log(player2.score)
+console.log(student1.name)
+console.log(student1.age)
+console.log(student1.gpa)
 
-player1.pause()
-player2.exit()
+console.log(student2.name)
+console.log(student2.age)
+console.log(student2.gpa)
+
+
