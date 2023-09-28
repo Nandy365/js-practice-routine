@@ -914,7 +914,7 @@ class student{
         
     }
     study(){
-        console.log(`${this.name} i am studing`)
+        console.log(`${this.name} started studing`)
     }
 }
 
@@ -929,4 +929,5 @@ console.log(student2.name)
 console.log(student2.age)
 console.log(student2.gpa)
 
+student1.study()
 
