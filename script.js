@@ -1122,36 +1122,52 @@
 // function colorChange(car,color){
 //     car.color = color
 // }
+//array of objects
+
+// class Car {
+
+//     constructor(name,year,color){
+//         this.name=name
+//         this.year=year
+//         this.color=color
+//     }
+//     drive(){
+//         console.log(`today i am driving ${this.name}`)
+//     }
+//     }
+//     let car1 =new  Car ("lamborghini",2026,"multicolor")
+//     let car2 =new Car ("G-vagun",2026,"white")
+//     let car3 =new Car ("Range rover",2026,"matbalck")
+
+//     let cars = [car1, car2,car3]
 
 
-class Car {
+//     // console.log(cars [0].name)
+//     // console.log(cars [1].name)
+//     // console.log(cars [2].name)
+//     // cars[0].drive()
+//     // cars[1].drive()
+//     // cars[2].drive()
+//     racemood(cars);
 
-    constructor(name,year,color){
-        this.name=name
-        this.year=year
-        this.color=color
+//     function racemood(cars){
+//         for(const car of cars){
+//             car.drive()
+//         }
+//     }
+
+//anonynous objects
+
+class Cards{
+    constructor(value,suit){
+        this.value=value
+        this.suit=suit
     }
-    drive(){
-        console.log(`today i am driving ${this.name}`)
-    }
-    }
-    let car1 =new  Car ("lamborghini",2026,"multicolor")
-    let car2 =new Car ("G-vagun",2026,"white")
-    let car3 =new Car ("Range rover",2026,"matbalck")
-
-    let cars = [car1, car2,car3]
+}
 
 
-    // console.log(cars [0].name)
-    // console.log(cars [1].name)
-    // console.log(cars [2].name)
-    // cars[0].drive()
-    // cars[1].drive()
-    // cars[2].drive()
-    racemood(cars);
 
-    function racemood(cars){
-        for(const car of cars){
-            car.drive()
-        }
-    }
+
+let cards =[new Cards("A","king"),new Cards("b","king"),new Cards("c","king"),new Cards("e","king"),new Cards("f","king"),new Cards("g","king"), new Cards("h","king")]
+
+cards.forEach(card => console.log(`${card.value} ${card.suit}`))
