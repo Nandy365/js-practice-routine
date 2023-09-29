@@ -1066,32 +1066,58 @@
 
 //get
 
-class Car{
-    constructor(power){
-        this._gas = 23
-        this._power = power
+// class Car{
+//     constructor(power){
+//         this._gas = 23
+//         this._power = power
 
-    }
-   get power(){
-        return `${this._power}hp`
-    }
-    get gas(){
-        return `${this._gas} (${this._gas / 50 *100}%)`
-    }
-    set gas(value){
-        if(value > 50){
-        value = 50
-        }
-        else if(value < 0){
-            value = 0
-        }
-        this._gas=value
-    }
+//     }
+//    get power(){
+//         return `${this._power}hp`
+//     }
+//     get gas(){
+//         return `${this._gas} (${this._gas / 50 *100}%)`
+//     }
+//     set gas(value){
+//         if(value > 50){
+//         value = 50
+//         }
+//         else if(value < 0){
+//             value = 0
+//         }
+//         this._gas=value
+//     }
+// }
+
+// let car = new Car (4000)
+
+// car.gas = -76;
+
+// console.log(car.power)
+// console.log(car.gas)
+
+
+class Car {
+
+constructor(name,year,color){
+    this.name=name
+    this.year=year
+    this.color=color
+}
+}
+let car1 =new  Car ("lamborghini",2026,"multicolor")
+let car2 =new Car ("G-vagun",2026,"white")
+let car3 =new Car ("Range rover",2026,"matbalck")
+
+colorChange(car2, "matblack")
+displayCars(car2)
+
+function displayCars(car){
+console.log(car.name)
+console.log(car.year)
+console.log(car.color)
 }
 
-let car = new Car (4000)
-
-car.gas = -76;
-
-console.log(car.power)
-console.log(car.gas)
+function colorChange(car,color){
+    car.color = color
+}
