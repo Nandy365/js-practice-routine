@@ -748,7 +748,7 @@
 //     count -=1
 //     document.getElementById("myLable").innerHTML = count
 //}
- 
+
 
 //arrow function 
 
@@ -763,7 +763,7 @@
 // grades.forEach((element)=> console.log(element))
 
 
- //shuffle an array
+//shuffle an array
 
 // let cards = ["22","2","3","4","5","h","g","8","9"]
 
@@ -798,7 +798,7 @@
 // displayuserage();
 // displayusername();
 
-    
+
 // function displayusername(){
 //     console.log(`My name is ${userName}`)
 // }
@@ -912,7 +912,7 @@
 //         this.name = name
 //         this.age = age
 //         this.gpa = gpa
-        
+
 //     }
 //     study(){
 //         console.log(`${this.name} started studing`)
@@ -968,10 +968,10 @@
 
 // class Rabbit extends animal{
 
-   
+
 //     name = "rabbit";
 
-   
+
 //     run(){
 //         console.log(`now ${this.name} wsa running`)
 //     }
@@ -979,7 +979,7 @@
 
 // class Fish extends animal{
 
-   
+
 //     name = "fish";
 
 //     swim(){
@@ -991,7 +991,7 @@
 
 //     name = "hawk";
 
-  
+
 //     fly(){
 //         console.log(`now ${this.name} wsa flying`)
 //     }
@@ -1043,7 +1043,7 @@
 //         super(name,age)
 //         this.flyspeed = flyspeed;
 //     }
-   
+
 // }
 
 // const rabbit = new Rabbit("rabbit",2,60);
@@ -1158,16 +1158,41 @@
 
 //anonynous objects
 
-class Cards{
-    constructor(value,suit){
-        this.value=value
-        this.suit=suit
-    }
+// class Cards {
+//     constructor(value, suit) {
+//         this.value = value
+//         this.suit = suit
+//     }
+// }
+
+
+
+
+// let cards = [new Cards("A", "king"), new Cards("b", "king"), new Cards("c", "king"), new Cards("e", "king"), new Cards("f", "king"), new Cards("g", "king"), new Cards("h", "king")]
+
+// cards.forEach(card => console.log(`${card.value} ${card.suit}`))
+
+
+//error 
+
+
+//can`t open a file
+//  lose connection 
+//  user types  incorrect input 
+//  type error 
+
+
+try{
+    let x = window.prompt("enter a number #")
+    x = Number(x)
+
+    if (isNaN(x)) throw "that wasn`t number plz enter a number"
+    if (x == "") throw "thar is no number"
+    console.log(`${x} is a number`)
 }
-
-
-
-
-let cards =[new Cards("A","king"),new Cards("b","king"),new Cards("c","king"),new Cards("e","king"),new Cards("f","king"),new Cards("g","king"), new Cards("h","king")]
-
-cards.forEach(card => console.log(`${card.value} ${card.suit}`))
+catch(error){
+console.log(error)
+}
+finally{
+    console.log("this always executes")
+}
