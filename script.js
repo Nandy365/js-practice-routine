@@ -1013,51 +1013,74 @@
 // rabbit.run()
 // rabbit.eat()
 
+//super keyword
 
-class Animal{
+// class Animal{
 
-    constructor(name,age){
-        this.name = name;
-        this.age = age;
-    }
-}
+//     constructor(name,age){
+//         this.name = name;
+//         this.age = age;
+//     }
+// }
 
-class Rabbit extends Animal{
+// class Rabbit extends Animal{
 
-    constructor(name,age,runspeed ){
-        super(name,age)
-        this.runspeed = runspeed;
-    }
+//     constructor(name,age,runspeed ){
+//         super(name,age)
+//         this.runspeed = runspeed;
+//     }
 
-}
-class Fish extends Animal{
-    constructor(name,age,swimspeed){
-        super(name,age)
-        this.swimspeed = swimspeed;
-    }
+// }
+// class Fish extends Animal{
+//     constructor(name,age,swimspeed){
+//         super(name,age)
+//         this.swimspeed = swimspeed;
+//     }
 
-}
-class Hawk extends Animal{
-    constructor(name,age,flyspeed){
-        super(name,age)
-        this.flyspeed = flyspeed;
-    }
+// }
+// class Hawk extends Animal{
+//     constructor(name,age,flyspeed){
+//         super(name,age)
+//         this.flyspeed = flyspeed;
+//     }
    
+// }
+
+// const rabbit = new Rabbit("rabbit",2,60);
+// const fish = new Fish("fish",1.5,50)
+// const hawk = new Hawk("hawk",5,100)
+
+// console.log(fish.name);
+// console.log(fish.age);
+// console.log(fish.swimspeed);
+
+
+// console.log(rabbit.name);
+// console.log(rabbit.age);
+// console.log(rabbit.runspeed);
+
+// console.log(hawk.name);
+// console.log(hawk.age);
+// console.log(hawk.flyspeed);
+
+
+//get
+
+class Car{
+    constructor(power){
+        this._gas = 23
+        this._power = power
+
+    }
+   get power(){
+        return `${this._power}hp`
+    }
+    get gas(){
+        return `${this._gas} (${this._gas / 50 *100}%)`
+    }
 }
 
-const rabbit = new Rabbit("rabbit",2,60);
-const fish = new Fish("fish",1.5,50)
-const hawk = new Hawk("hawk",5,100)
+let car = new Car (4000)
 
-console.log(fish.name);
-console.log(fish.age);
-console.log(fish.swimspeed);
-
-
-console.log(rabbit.name);
-console.log(rabbit.age);
-console.log(rabbit.runspeed);
-
-console.log(hawk.name);
-console.log(hawk.age);
-console.log(hawk.flyspeed);
+console.log(car.power)
+console.log(car.gas)
