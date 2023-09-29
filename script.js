@@ -1096,28 +1096,62 @@
 // console.log(car.power)
 // console.log(car.gas)
 
+//objects as arguments
+
+// class Car {
+
+// constructor(name,year,color){
+//     this.name=name
+//     this.year=year
+//     this.color=color
+// }
+// }
+// let car1 =new  Car ("lamborghini",2026,"multicolor")
+// let car2 =new Car ("G-vagun",2026,"white")
+// let car3 =new Car ("Range rover",2026,"matbalck")
+
+// colorChange(car2, "matblack")
+// displayCars(car2)
+
+// function displayCars(car){
+// console.log(car.name)
+// console.log(car.year)
+// console.log(car.color)
+// }
+
+// function colorChange(car,color){
+//     car.color = color
+// }
+
 
 class Car {
 
-constructor(name,year,color){
-    this.name=name
-    this.year=year
-    this.color=color
-}
-}
-let car1 =new  Car ("lamborghini",2026,"multicolor")
-let car2 =new Car ("G-vagun",2026,"white")
-let car3 =new Car ("Range rover",2026,"matbalck")
+    constructor(name,year,color){
+        this.name=name
+        this.year=year
+        this.color=color
+    }
+    drive(){
+        console.log(`today i am driving ${this.name}`)
+    }
+    }
+    let car1 =new  Car ("lamborghini",2026,"multicolor")
+    let car2 =new Car ("G-vagun",2026,"white")
+    let car3 =new Car ("Range rover",2026,"matbalck")
 
-colorChange(car2, "matblack")
-displayCars(car2)
+    let cars = [car1, car2,car3]
 
-function displayCars(car){
-console.log(car.name)
-console.log(car.year)
-console.log(car.color)
-}
 
-function colorChange(car,color){
-    car.color = color
-}
+    // console.log(cars [0].name)
+    // console.log(cars [1].name)
+    // console.log(cars [2].name)
+    // cars[0].drive()
+    // cars[1].drive()
+    // cars[2].drive()
+    racemood(cars);
+
+    function racemood(cars){
+        for(const car of cars){
+            car.drive()
+        }
+    }
