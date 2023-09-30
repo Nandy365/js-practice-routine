@@ -1254,13 +1254,22 @@ let date = new Date();
 // let sec = date.getSeconds();
 // let ms = date.getMilliseconds();
 
-date.setFullYear(2026)
-date.setMonth(4);
-date.setDate(1);
-date.setHours(1);
-date.setMinutes(43);
-date.setSeconds(55);
-date.getMilliseconds(77)
+// date.setFullYear(2026)
+// date.setMonth(4);
+// date.setDate(1);
+// date.setHours(1);
+// date.setMinutes(43);
+// date.setSeconds(55);
+// date.getMilliseconds(77)
+//date = date.toLocaleString()
 
-date = date.toLocaleString()
-document.getElementById("myLable").innerHTML = date ;
+
+
+function formatDate(date){
+    let day =date.getDate()
+    let month = date.getMonth()+2;
+    let year = date.getFullYear()
+    return `${day}/${month}/${year}`
+}
+
+document.getElementById("myLable").innerHTML = formatDate(date);
