@@ -1222,16 +1222,27 @@
 //     alert('thanks for buning this')
 // }
 
-let count = 0;
-let max =window.prompt("enter the number")
-max = Number(max)
+//setInterval
 
-let mytimer = setInterval(countUp,1000);
+// let count = 0;
+// let max =window.prompt("enter the number")
+// max = Number(max)
 
-function countUp(){
-    count += 1
-    console.log(count)
-    if(count >= max){
-        clearInterval(mytimer)
-    }
-}
+// let mytimer = setInterval(countUp,1000);
+
+// function countUp(){
+//     count += 1
+//     console.log(count)
+//     if(count >= max){
+//         clearInterval(mytimer)
+//     }
+// }
+
+//date objects = date and time 
+
+
+let date = new Date(2001,0,2, 9, 3, 4, 6);
+
+date = date.toLocaleString()
+
+document.getElementById("myLable").innerHTML = date
