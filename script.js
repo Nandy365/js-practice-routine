@@ -1241,9 +1241,19 @@
 //date objects = date and time 
 
 
+let date = new Date();
 //let date = new Date(2001,0,2, 9, 3, 4, 6);
-let date = new Date("january 1, 2023 00:00:00");
+//let date = new Date("january 1, 2023 00:00:00");
+
+let year = date.getFullYear();
+let dayfomonth = date.getMonth();
+let dayofweek = date.getDay();
+let month = date.getMonth();
+let hours = date.getHours();
+let minutis = date.getMinutes();
+let sec = date.getSeconds();
+let ms = date.getMilliseconds();
+
 
 date = date.toLocaleString()
-
-document.getElementById("myLable").innerHTML = date
+document.getElementById("myLable").innerHTML = ms;
