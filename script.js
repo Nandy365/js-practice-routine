@@ -1271,5 +1271,15 @@ function formatDate(date){
     let year = date.getFullYear()
     return `${day}/${month}/${year}`
 }
+function formatTime(date){
+    let hours = date.getHours();
+    let minutis = date.getMinutes();
+    let seconds = date.getSeconds();
+    let amORpm = hours >= 12 ? "pm" : "am"
 
-document.getElementById("myLable").innerHTML = formatDate(date);
+    hours = (hours %  12) || 12;
+
+    return `${hours}/${minutis}/${seconds}/${amORpm}`
+}
+
+document.getElementById("myLable").innerHTML = formatTime(date);
