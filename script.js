@@ -1241,7 +1241,8 @@
 //date objects = date and time 
 
 
-let date = new Date(2001,0,2, 9, 3, 4, 6);
+//let date = new Date(2001,0,2, 9, 3, 4, 6);
+let date = new Date("january 1, 2023 00:00:00");
 
 date = date.toLocaleString()
 
