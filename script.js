@@ -1245,15 +1245,22 @@ let date = new Date();
 //let date = new Date(2001,0,2, 9, 3, 4, 6);
 //let date = new Date("january 1, 2023 00:00:00");
 
-let year = date.getFullYear();
-let dayfomonth = date.getMonth();
-let dayofweek = date.getDay();
-let month = date.getMonth();
-let hours = date.getHours();
-let minutis = date.getMinutes();
-let sec = date.getSeconds();
-let ms = date.getMilliseconds();
+// let year = date.getFullYear();
+// let dayfomonth = date.getMonth();
+// let dayofweek = date.getDay();
+// let month = date.getMonth();
+// let hours = date.getHours();
+// let minutis = date.getMinutes();
+// let sec = date.getSeconds();
+// let ms = date.getMilliseconds();
 
+date.setFullYear(2026)
+date.setMonth(4);
+date.setDate(1);
+date.setHours(1);
+date.setMinutes(43);
+date.setSeconds(55);
+date.getMilliseconds(77)
 
 date = date.toLocaleString()
-document.getElementById("myLable").innerHTML = ms;
+document.getElementById("myLable").innerHTML = date ;
