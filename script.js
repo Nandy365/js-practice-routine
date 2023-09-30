@@ -1182,17 +1182,42 @@
 //  type error 
 
 
-try{
-    let x = window.prompt("enter a number #")
-    x = Number(x)
+// try{
+//     let x = window.prompt("enter a number #")
+//     x = Number(x)
 
-    if (isNaN(x)) throw "that wasn`t number plz enter a number"
-    if (x == "") throw "thar is no number"
-    console.log(`${x} is a number`)
+//     if (isNaN(x)) throw "that wasn`t number plz enter a number"
+//     if (x == "") throw "thar is no number"
+//     console.log(`${x} is a number`)
+// }
+// catch(error){
+// console.log(error)
+// }
+// finally{
+//     console.log("this always executes")
+// }
+
+
+//set Timeout()
+let item ="vip range rover"
+let price = `50000000 k+tax`
+
+let timer1 = setTimeout(firstMessage,6000 ,item,price)
+let timer2 = setTimeout(secuondMessage,9000)
+let timer3 = setTimeout(thirdMessage,9000)
+
+function firstMessage(item,price){
+    alert(`buy this ${item} for ${price}`)
 }
-catch(error){
-console.log(error)
+function secuondMessage(){
+    alert(`this car for only vips`)
 }
-finally{
-    console.log("this always executes")
+function thirdMessage(){
+    alert(`only 10 cars left buy it now`)
+}
+document.getElementById("mybutton").onclick = function(){
+    clearTimeout(timer1)
+    clearTimeout(timer2)
+    clearTimeout(timer3)
+    alert('thanks for buning this')
 }
