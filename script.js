@@ -1246,41 +1246,76 @@
 // let date = new Date("january 1, 2023 00:00:00");
 
 
-let year = date.getFullYear();
-let dayfomonth = date.getMonth();
-let dayofweek = date.getDay();
-let month = date.getMonth();
-let hours = date.getHours();
-let minutis = date.getMinutes();
-let sec = date.getSeconds();
-let ms = date.getMilliseconds();
+// let year = date.getFullYear();
+// let dayfomonth = date.getMonth();
+// let dayofweek = date.getDay();
+// let month = date.getMonth();
+// let hours = date.getHours();
+// let minutis = date.getMinutes();
+// let sec = date.getSeconds();
+// let ms = date.getMilliseconds();
 
-date.setFullYear(2026)
-date.setMonth(4);
-date.setDate(1);
-date.setHours(1);
-date.setMinutes(43);
-date.setSeconds(55);
-date.getMilliseconds(77)
-date = date.toLocaleString()
+// date.setFullYear(2026)
+// date.setMonth(4);
+// date.setDate(1);
+// date.setHours(1);
+// date.setMinutes(43);
+// date.setSeconds(55);
+// date.getMilliseconds(77)
+// date = date.toLocaleString()
 
 
 
-function formatDate(date){
-    let day =date.getDate()
-    let month = date.getMonth()+2;
-    let year = date.getFullYear()
-    return `${day}/${month}/${year}`
+// function formatDate(date){
+//     let day =date.getDate()
+//     let month = date.getMonth()+2;
+//     let year = date.getFullYear()
+//     return `${day}/${month}/${year}`
+// }
+// function formatTime(date){
+//     let hours = date.getHours();
+//     let minutis = date.getMinutes();
+//     let seconds = date.getSeconds();
+//     let amORpm = hours >= 12 ? "pm" : "am"
+
+//     hours = (hours %  12) || 12;
+
+//     return `${hours}/${minutis}/${seconds}/${amORpm}`
+// }
+
+// document.getElementById("myLable").innerHTML = formatTime(date);
+
+
+//clock program 
+
+const myLable = document.getElementById("myLable")
+
+update();
+
+setInterval(update,1000)
+
+function update(){
+
+    let date = new Date();
+    myLable.innerHTML = formateTime(date)
+
+    function formateTime(date){
+        let hours = date.getHours();
+        let minutes = date.getMinutes();
+        let secouds = date.getSeconds();
+        let amorpm = hours >= 12 ? "pm" : "am"
+
+        hours = (hours % 12) || 12;
+
+        hours = formatzeroes(hours)
+        minutes = formatzeroes(minutes)
+        secouds = formatzeroes(secouds)
+
+        return `${hours}:${minutes}:${secouds} ${amorpm}`
+    }
+    function formatzeroes(time){
+        time = time.toString()
+        return time.length < 2 ? "0" +time : time;
+    }
+
 }
-function formatTime(date){
-    let hours = date.getHours();
-    let minutis = date.getMinutes();
-    let seconds = date.getSeconds();
-    let amORpm = hours >= 12 ? "pm" : "am"
-
-    hours = (hours %  12) || 12;
-
-    return `${hours}/${minutis}/${seconds}/${amORpm}`
-}
-
-document.getElementById("myLable").innerHTML = formatTime(date);
