@@ -1322,6 +1322,14 @@
 
 
 // asynchronous 
-console.log("nandy")
+// console.log("nandy")
 
-setTimeout(() => console.log("hello guys "),9000)
+// setTimeout(() => console.log("hello guys "),9000)
+
+//console.time method
+
+console.time("the response")
+
+setTimeout(()=> console.log("time line") ,5000)
+
+console.timeEnd("the response")
