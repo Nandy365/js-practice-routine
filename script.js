@@ -1288,34 +1288,40 @@
 
 //clock program 
 
-const myLable = document.getElementById("myLable")
+// const myLable = document.getElementById("myLable")
 
-update();
+// update();
 
-setInterval(update,1000)
+// setInterval(update,1000)
 
-function update(){
+// function update(){
 
-    let date = new Date();
-    myLable.innerHTML = formateTime(date)
+//     let date = new Date();
+//     myLable.innerHTML = formateTime(date)
 
-    function formateTime(date){
-        let hours = date.getHours();
-        let minutes = date.getMinutes();
-        let secouds = date.getSeconds();
-        let amorpm = hours >= 12 ? "pm" : "am"
+//     function formateTime(date){
+//         let hours = date.getHours();
+//         let minutes = date.getMinutes();
+//         let secouds = date.getSeconds();
+//         let amorpm = hours >= 12 ? "pm" : "am"
 
-        hours = (hours % 12) || 12;
+//         hours = (hours % 12) || 12;
 
-        hours = formatzeroes(hours)
-        minutes = formatzeroes(minutes)
-        secouds = formatzeroes(secouds)
+//         hours = formatzeroes(hours)
+//         minutes = formatzeroes(minutes)
+//         secouds = formatzeroes(secouds)
 
-        return `${hours}:${minutes}:${secouds} ${amorpm}`
-    }
-    function formatzeroes(time){
-        time = time.toString()
-        return time.length < 2 ? "0" +time : time;
-    }
+//         return `${hours}:${minutes}:${secouds} ${amorpm}`
+//     }
+//     function formatzeroes(time){
+//         time = time.toString()
+//         return time.length < 2 ? "0" +time : time;
+//     }
 
-}
+// }
+
+
+// asynchronous 
+console.log("nandy")
+
+setTimeout(() => console.log("hello guys "),9000)
