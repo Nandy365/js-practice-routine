@@ -1354,8 +1354,31 @@
 // .catch(error => console.log(error))
 
 
-const wait = time => new Promise ( resolve =>{
-    setTimeout(resolve, 5000)
-})
+// const wait = time => new Promise ( resolve =>{
+//     setTimeout(resolve, time)
+// })
 
-wait(5000) .then(() => console.log("thans for waiting") )
+// wait(5000) .then(() => console.log("thans for waiting") )
+
+//async make a function return a promise
+
+async function Loadfile(){
+
+
+    let fileloaded = false;
+
+    if(fileloaded){
+
+        return "file was loaded"
+
+    }
+
+    else{
+
+        throw "file not loaded"
+
+    }
+}
+
+Loadfile().then(value => console.log(value))
+            .catch(error => console.log(error));
