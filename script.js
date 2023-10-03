@@ -1328,8 +1328,27 @@
 
 //console.time method
 
-console.time("the response")
+// console.time("the response")
 
-setTimeout(()=> console.log("time line") ,5000)
+// setTimeout(()=> console.log("time line") ,5000)
 
-console.timeEnd("the response")
+// console.timeEnd("the response")
+
+
+//promise 
+
+const promise = new Promise((resolve,reject) =>{
+
+    let fileloaded = false;
+
+    if(fileloaded){
+        resolve("this file was loaded")
+    }
+    else{
+        reject("this file not loaded")
+    }
+})
+
+
+promise.then(value => console.log(value))
+.catch(error => console.log(error))
