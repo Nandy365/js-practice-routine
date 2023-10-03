@@ -1365,7 +1365,7 @@
 async function Loadfile(){
 
 
-    let fileloaded = false;
+    let fileloaded = true;
 
     if(fileloaded){
 
@@ -1380,5 +1380,15 @@ async function Loadfile(){
     }
 }
 
-Loadfile().then(value => console.log(value))
-            .catch(error => console.log(error));
+async function process(){
+
+    try{
+    let message = await Loadfile()
+console.log(message)
+    }
+    catch(error){
+        console.log(error)
+    }
+
+}
+process()
