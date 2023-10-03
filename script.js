@@ -1337,18 +1337,25 @@
 
 //promise 
 
-const promise = new Promise((resolve,reject) =>{
+// const promise = new Promise((resolve,reject) =>{
 
-    let fileloaded = false;
+//     let fileloaded = false;
 
-    if(fileloaded){
-        resolve("this file was loaded")
-    }
-    else{
-        reject("this file not loaded")
-    }
+//     if(fileloaded){
+//         resolve("this file was loaded")
+//     }
+//     else{
+//         reject("this file not loaded")
+//     }
+// })
+
+
+// promise.then(value => console.log(value))
+// .catch(error => console.log(error))
+
+
+const wait = time => new Promise ( resolve =>{
+    setTimeout(resolve, 5000)
 })
 
-
-promise.then(value => console.log(value))
-.catch(error => console.log(error))
+wait(5000) .then(() => console.log("thans for waiting") )
