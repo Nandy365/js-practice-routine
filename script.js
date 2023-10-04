@@ -1362,33 +1362,43 @@
 
 //async make a function return a promise
 
-async function Loadfile(){
+// async function Loadfile(){
 
 
-    let fileloaded = true;
+//     let fileloaded = true;
 
-    if(fileloaded){
+//     if(fileloaded){
 
-        return "file was loaded"
+//         return "file was loaded"
 
-    }
+//     }
 
-    else{
+//     else{
 
-        throw "file not loaded"
+//         throw "file not loaded"
 
-    }
-}
+//     }
+// }
 
-async function process(){
+// async function process(){
 
-    try{
-    let message = await Loadfile()
-console.log(message)
-    }
-    catch(error){
-        console.log(error)
-    }
+//     try{
+//     let message = await Loadfile()
+// console.log(message)
+//     }
+//     catch(error){
+//         console.log(error)
+//     }
+// }
+// process()
+// import{PI,getCircumference,getArea} from "./math_util.js"
+import *as all from "./math_util.js"
 
-}
-process()
+console.log(all.PI)
+let circumference =all.getCircumference(44)
+
+console.log(circumference)
+
+let area =all.getArea(44)
+
+console.log(area)
