@@ -1404,4 +1404,6 @@
 // console.log(area)
 
 //document.title ="nandy"
-document.location = "http://www.google.com"
+//document.location = "http://www.google.com"
+document.body.style.backgroundColor = "yellow";
+document.getElementById("myLable").innerHTML = "rest in peace ramesh good bye my friend " 
