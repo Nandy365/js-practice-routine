@@ -1392,13 +1392,16 @@
 // }
 // process()
 // import{PI,getCircumference,getArea} from "./math_util.js"
-import *as all from "./math_util.js"
+// import *as all from "./math_util.js"
 
-console.log(all.PI)
-let circumference =all.getCircumference(44)
+// console.log(all.PI)
+// let circumference =all.getCircumference(44)
 
-console.log(circumference)
+// console.log(circumference)
 
-let area =all.getArea(44)
+// let area =all.getArea(44)
 
-console.log(area)
+// console.log(area)
+
+//document.title ="nandy"
+document.location = "http://www.google.com"
