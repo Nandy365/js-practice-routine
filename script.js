@@ -1405,5 +1405,10 @@
 
 //document.title ="nandy"
 //document.location = "http://www.google.com"
-document.body.style.backgroundColor = "yellow";
-document.getElementById("myLable").innerHTML = "rest in peace ramesh good bye my friend " 
+// document.body.style.backgroundColor = "yellow";
+//document.getElementById("myLable").innerHTML = "rest in peace ramesh good bye my friend " 
+
+
+let element = document.getElementById("mycar")
+
+element.style.backgroundColor="lightblue"
