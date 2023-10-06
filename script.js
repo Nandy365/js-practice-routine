@@ -1413,10 +1413,15 @@
 
 // element.style.backgroundColor="lightblue"
 
-let fruits = document.getElementsByName("fruits")
+// let fruits = document.getElementsByName("fruits")
 
-fruits.forEach(fruit => {
-    if(fruit.checked){
-        console.log(fruit.value)
-    }
-})
+// fruits.forEach(fruit => {
+//     if(fruit.checked){
+//         console.log(fruit.value)
+//     }
+// })
+
+let vegetables = document.getElementsByTagName("li")
+vegetables[0].style.backgroundColor="orange"
+vegetables[1].style.backgroundColor="yellow"
+vegetables[2].style.backgroundColor="pink"
