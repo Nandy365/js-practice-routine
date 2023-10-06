@@ -1426,10 +1426,18 @@
 // vegetables[1].style.backgroundColor="yellow"
 // vegetables[2].style.backgroundColor="pink"
 
-let desserts = document.getElementsByClassName("desserts")
+// let desserts = document.getElementsByClassName("desserts")
 
-desserts[0].style.backgroundColor="pink"
-desserts[1].style.backgroundColor="brown"
-desserts[2].style.backgroundColor="purple"
+// desserts[0].style.backgroundColor="pink"
+// desserts[1].style.backgroundColor="brown"
+// desserts[2].style.backgroundColor="purple"
+
+// let element = document.querySelector("[for]")
+
+// element.style.backgroundColor="red"
 
 
+let element = document.querySelectorAll("li")
+element.forEach(element => {
+    element.style.background="red"
+})
