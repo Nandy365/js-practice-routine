@@ -1421,7 +1421,15 @@
 //     }
 // })
 
-let vegetables = document.getElementsByTagName("li")
-vegetables[0].style.backgroundColor="orange"
-vegetables[1].style.backgroundColor="yellow"
-vegetables[2].style.backgroundColor="pink"
+// let vegetables = document.getElementsByTagName("li")
+// vegetables[0].style.backgroundColor="orange"
+// vegetables[1].style.backgroundColor="yellow"
+// vegetables[2].style.backgroundColor="pink"
+
+let desserts = document.getElementsByClassName("desserts")
+
+desserts[0].style.backgroundColor="pink"
+desserts[1].style.backgroundColor="brown"
+desserts[2].style.backgroundColor="purple"
+
+
