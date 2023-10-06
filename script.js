@@ -1409,6 +1409,14 @@
 //document.getElementById("myLable").innerHTML = "rest in peace ramesh good bye my friend " 
 
 
-let element = document.getElementById("mycar")
+// let element = document.getElementById("mycar")
 
-element.style.backgroundColor="lightblue"
+// element.style.backgroundColor="lightblue"
+
+let fruits = document.getElementsByName("fruits")
+
+fruits.forEach(fruit => {
+    if(fruit.checked){
+        console.log(fruit.value)
+    }
+})
