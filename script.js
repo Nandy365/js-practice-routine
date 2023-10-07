@@ -1437,7 +1437,11 @@
 // element.style.backgroundColor="red"
 
 
-let element = document.querySelectorAll("li")
-element.forEach(element => {
-    element.style.background="red"
-})
+// let element = document.querySelectorAll("li")
+// element.forEach(element => {
+//     element.style.background="red"
+// })
+
+let element = document.body
+let child = element.firstElementChild;
+child.style.backgroundColor ="yellow"
