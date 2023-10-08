@@ -1447,6 +1447,13 @@
 // let parent= element.parentElement
 // parent.style.backgroundColor="green"
 
+// let element = document.querySelector("#vegetable");
+// let sibling= element.nextElementSibling
+// sibling.style.backgroundColor="green"
+
 let element = document.querySelector("#vegetable");
-let sibling= element.nextElementSibling
+let sibling= element.previousElementSibling
 sibling.style.backgroundColor="green"
+
+//parentElement
+//nextElementSibling
