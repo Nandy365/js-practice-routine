@@ -1440,8 +1440,9 @@
 // let element = document.querySelectorAll("li")
 // element.forEach(element => {
 //     element.style.background="red"
-// })
+// }
 
-let element = document.body
-let child = element.firstElementChild;
-child.style.backgroundColor ="yellow"
+
+let element = document.querySelector("#vegetable");
+let parent= element.parentElement
+parent.style.backgroundColor="green"
