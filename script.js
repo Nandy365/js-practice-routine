@@ -1452,8 +1452,8 @@
 // sibling.style.backgroundColor="green"
 
 let element = document.querySelector("#vegetable");
-let sibling= element.previousElementSibling
-sibling.style.backgroundColor="green"
+let children = Array.from(element.children)
+children.forEach(child => child.style.backgroundColor="green")
 
 //parentElement
 //nextElementSibling
