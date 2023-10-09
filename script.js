@@ -1464,11 +1464,22 @@
 // tagname.innerHTML="hello guys"
 // document.body.append(tagname)
 
-const mylist = document.querySelector("#fruit")
-const listitem = document.createElement("li")
-//listitem.textContent ="mango"
-listitem.textContent ="lemon"
-//mylist.append(listitem) //add item on last
-//mylist.prepend(listitem) // add item on front
+// const mylist = document.querySelector("#fruit")
+// const listitem = document.createElement("li")
+// //listitem.textContent ="mango"
+// listitem.textContent ="lemon"
+// //mylist.append(listitem) //add item on last
+// //mylist.prepend(listitem) // add item on front
 
-mylist.insertBefore(listitem,mylist.getElementsByTagName("li")[3])
+// mylist.insertBefore(listitem,mylist.getElementsByTagName("li")[3])
+
+//add/change CSS properties
+
+const title = document.getElementById("myLable")
+
+title.style.backgroundColor ="black"
+title.style.color="rgb(22,333,545)"
+title.style.fontFamily="consolas"
+title.style.textAlign="center"
+title.style.border = "2px solid"
+title.style.display= "block"
