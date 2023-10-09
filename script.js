@@ -1451,9 +1451,14 @@
 // let sibling= element.nextElementSibling
 // sibling.style.backgroundColor="green"
 
-let element = document.querySelector("#vegetable");
-let children = Array.from(element.children)
-children.forEach(child => child.style.backgroundColor="green")
+// let element = document.querySelector("#vegetable");
+// let children = Array.from(element.children)
+// children.forEach(child => child.style.backgroundColor="green")
 
 //parentElement
 //nextElementSibling
+
+
+const tagname =document.childElementCount("h1")
+tagname.innerHTML="hello guys"
+document.body.append(tagname)
