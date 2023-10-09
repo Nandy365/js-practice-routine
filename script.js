@@ -1469,4 +1469,6 @@ const listitem = document.createElement("li")
 //listitem.textContent ="mango"
 listitem.textContent ="lemon"
 //mylist.append(listitem) //add item on last
-mylist.prepend(listitem)
+//mylist.prepend(listitem) // add item on front
+
+mylist.insertBefore(listitem,mylist.getElementsByTagName("li")[3])
