@@ -1458,7 +1458,15 @@
 //parentElement
 //nextElementSibling
 
+//add/change HTML elements
 
-const tagname =document.childElementCount("h1")
-tagname.innerHTML="hello guys"
-document.body.append(tagname)
+// const tagname =document.childElementCount("h1")
+// tagname.innerHTML="hello guys"
+// document.body.append(tagname)
+
+const mylist = document.querySelector("#fruit")
+const listitem = document.createElement("li")
+listitem.textContent ="mango"
+//listitem.textContent ="lemon"
+mylist.append(listitem)
+//mylist.prepend(listitem)
