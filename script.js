@@ -1466,7 +1466,7 @@
 
 const mylist = document.querySelector("#fruit")
 const listitem = document.createElement("li")
-listitem.textContent ="mango"
-//listitem.textContent ="lemon"
-mylist.append(listitem)
-//mylist.prepend(listitem)
+//listitem.textContent ="mango"
+listitem.textContent ="lemon"
+//mylist.append(listitem) //add item on last
+mylist.prepend(listitem)
