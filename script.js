@@ -1489,9 +1489,19 @@
 // const element = document.getElementById("mybutton")
 // element.onclick = dosomething;
 
-const element = document.body
-element.onload =dosomething
+// const element = document.body
+// element.onload =dosomething
+
+// const element = document.getElementById("mytext")
+
+// element.onchange = dosomething;
+const element = document.getElementById("mydiv")
+element.onmouseover = dosomething;
+element.onmouseout =donothing
 
 function dosomething(){
-    alert("hello guys")
+    element.style.backgroundColor="green"
+}
+function donothing(){
+    element.style.backgroundColor="cyan"
 }
