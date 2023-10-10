@@ -1475,11 +1475,18 @@
 
 //add/change CSS properties
 
-const title = document.getElementById("myLable")
+// const title = document.getElementById("myLable")
 
-title.style.backgroundColor ="black"
-title.style.color="rgb(22,333,545)"
-title.style.fontFamily="consolas"
-title.style.textAlign="center"
-title.style.border = "2px solid"
-title.style.display= "block"
+// title.style.backgroundColor ="black"
+// title.style.color="rgb(22,333,545)"
+// title.style.fontFamily="consolas"
+// title.style.textAlign="center"
+// title.style.border = "2px solid"
+// title.style.display= "block"
+
+const element = document.getElementById("mybutton")
+element.onclick = dosomething;
+
+function dosomething(){
+    alert("hello guys")
+}
