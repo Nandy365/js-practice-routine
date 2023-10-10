@@ -28,3 +28,10 @@ body{
 #lambo{
     width: 300px;
 }
+#myDiv{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 1px solid;
+    position: relative;
+}
