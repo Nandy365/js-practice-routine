@@ -1484,8 +1484,13 @@
 // title.style.border = "2px solid"
 // title.style.display= "block"
 
-const element = document.getElementById("mybutton")
-element.onclick = dosomething;
+//events
+
+// const element = document.getElementById("mybutton")
+// element.onclick = dosomething;
+
+const element = document.body
+element.onload =dosomething
 
 function dosomething(){
     alert("hello guys")
