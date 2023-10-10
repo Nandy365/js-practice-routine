@@ -1495,9 +1495,15 @@
 // const element = document.getElementById("mytext")
 
 // element.onchange = dosomething;
+// const element = document.getElementById("mydiv")
+// element.onmouseover = dosomething;
+// element.onmouseout =donothing
+
 const element = document.getElementById("mydiv")
-element.onmouseover = dosomething;
-element.onmouseout =donothing
+element.onmousedown = dosomething;
+element.onmouseup =donothing
+
+
 
 function dosomething(){
     element.style.backgroundColor="green"
