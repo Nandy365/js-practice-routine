@@ -1499,15 +1499,31 @@
 // element.onmouseover = dosomething;
 // element.onmouseout =donothing
 
-const element = document.getElementById("mydiv")
-element.onmousedown = dosomething;
-element.onmouseup =donothing
+// const element = document.getElementById("mydiv")
+// element.onmousedown = dosomething;
+// element.onmouseup =donothing
 
 
 
-function dosomething(){
-    element.style.backgroundColor="green"
+// function dosomething(){
+//     element.style.backgroundColor="green"
+// }
+// function donothing(){
+//     element.style.backgroundColor="cyan"
+// }
+
+//.addEventListener(event,function, useCapture)
+ 
+const innerDiv = document.getElementById("innerDiv")
+
+innerDiv.addEventListener("mouseover",changeyellow)
+innerDiv.addEventListener("mouseout",changered)
+
+function changeyellow(){
+
+    innerDiv.style.backgroundColor = "yellow"
 }
-function donothing(){
-    element.style.backgroundColor="cyan"
+function changered(){
+
+    innerDiv.style.backgroundColor = "red"
 }
