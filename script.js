@@ -1528,14 +1528,28 @@
 //     innerDiv.style.backgroundColor = "red"
 // }
 
-const innerDiv = document.getElementById("innerDiv")
-const outerDiv = document.getElementById("outerDiv")
+// const innerDiv = document.getElementById("innerDiv")
+// const outerDiv = document.getElementById("outerDiv")
 
-innerDiv.addEventListener("click",changered)
-outerDiv.addEventListener("click",changered, true)
+// innerDiv.addEventListener("click",changered)
+// outerDiv.addEventListener("click",changered, true)
 
 
-function changered(){ 
-    alert(`you selected ${this.id}`)
-    this.style.backgroundColor="red"
-}
+// function changered(){ 
+//     alert(`you selected ${this.id}`)
+//     this.style.backgroundColor="red"
+// }
+
+//show/hidden HTML elements
+
+const mybutton = document.querySelector("#mybutton")
+const lambo = document.querySelector("#lambo")
+
+mybutton.addEventListener("click", () => {
+    if(lambo.style.visibility == "hidden"){
+        lambo.style.visibility = "visible"
+    }
+    else{
+        lambo.style.visibility = "hidden"
+    }
+})
