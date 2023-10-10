@@ -1514,16 +1514,28 @@
 
 //.addEventListener(event,function, useCapture)
  
+// const innerDiv = document.getElementById("innerDiv")
+
+// innerDiv.addEventListener("mouseover",changeyellow)
+// innerDiv.addEventListener("mouseout",changered)
+
+// function changeyellow(){
+
+//     innerDiv.style.backgroundColor = "yellow"
+// }
+// function changered(){
+
+//     innerDiv.style.backgroundColor = "red"
+// }
+
 const innerDiv = document.getElementById("innerDiv")
+const outerDiv = document.getElementById("outerDiv")
 
-innerDiv.addEventListener("mouseover",changeyellow)
-innerDiv.addEventListener("mouseout",changered)
+innerDiv.addEventListener("click",changered)
+outerDiv.addEventListener("click",changered, true)
 
-function changeyellow(){
 
-    innerDiv.style.backgroundColor = "yellow"
-}
-function changered(){
-
-    innerDiv.style.backgroundColor = "red"
+function changered(){ 
+    alert(`you selected ${this.id}`)
+    this.style.backgroundColor="red"
 }

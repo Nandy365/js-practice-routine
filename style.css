@@ -14,8 +14,14 @@ body{
     background-color: black;
     color: aliceblue;
 }
-#innerDiv{
+/* #innerDiv{
     background-color: aqua;
     height: 100px;
     width: 100px;
+    border:1px solid black;
+} */
+#outerDiv{
+    background-color: aqua;
+    height: 80px;
+    width: 80px;
 }
