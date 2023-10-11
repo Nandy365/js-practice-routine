@@ -1594,10 +1594,11 @@ const myanimation = document.getElementById("myDiv")
 mybutton.addEventListener("click",begin)
 
 function begin() {
-    let x = 0;
-    let y = 0;
    
     let timerId = null;
+    let degree = 0;
+    let x = 0;
+    let y = 0;
 
     timerId = setInterval(frame, 1)
     function frame(){
@@ -1605,12 +1606,12 @@ function begin() {
             clearInterval(timerId)
         }
         else{
-            x += 1;
-            y += 1;
-           
-            myanimation.style.top = y + "px"
-            myanimation.style.left = x + "px"
-
+            degree +=2;
+            x +=1;
+            y +=1;
+            myanimation.style.top = x + "px"
+            myanimation.style.left = y + "px"
+            myanimation.style.transform = "rotateZ("+degree+"deg)"
         }
     }
 }
