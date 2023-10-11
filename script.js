@@ -1647,23 +1647,63 @@ let  context = canvas.getContext("2d");
 
 
 //DRAW RECTANGLE 
-context.fillStyle =""
-context.fillRect(0,0,250,250)
-context.strokeRect(0,0,250,250)
-context.strokeStyle = "white"
+// context.fillStyle =""
+// context.fillRect(0,0,250,250)
+// context.strokeRect(0,0,250,250)
+// context.strokeStyle = "white"
 
+
+// context.fillStyle ="gray"
+// context.strokeRect(0,250,250,250)
+// context.fillRect(0,250,250,250)
+// context.strokeStyle ="black"
+
+// context.fillStyle ="black"
+// context.strokeRect(250,250,250,250)
+// context.fillRect(250,250,250,250)
+// context.strokeStyle ="white"
+
+// context.fillStyle ="gray"
+// context.strokeRect(250,0,250,250)
+// context.fillRect(250,0,250,250)
+//context.strokeStyle ="black"
+
+//DRAW CIRCLE
+//(x,y,r sAngle, eAngle, counterclockwise)
+
+
+context.fillStyle ="green"
+context.beginPath()
+context.arc(250,250,100, 0, 2 * Math.PI)
+context.stroke();
+context.fill();
+
+context.fillStyle ="blue"
+context.beginPath()
+context.arc(250,250,150, 0, 2 * Math.PI)
+context.stroke();
+context.fill();
+
+context.fillStyle ="pink"
+context.beginPath()
+context.arc(250,250,200, 0, 2 * Math.PI)
+context.stroke();
+context.fill();
+
+context.fillStyle ="red"
+context.beginPath()
+context.arc(250,250,70, 0, 2 * Math.PI)
+context.stroke();
+context.fill();
 
 context.fillStyle ="gray"
-context.strokeRect(0,250,250,250)
-context.fillRect(0,250,250,250)
-context.strokeStyle ="black"
+context.beginPath()
+context.arc(250,250,50, 0, 2 * Math.PI)
+context.stroke();
+context.fill();
 
-context.fillStyle ="black"
-context.strokeRect(250,250,250,250)
-context.fillRect(250,250,250,250)
-context.strokeStyle ="white"
-
-context.fillStyle ="gray"
-context.strokeRect(250,0,250,250)
-context.fillRect(250,0,250,250)
-context.strokeStyle ="black"
+context.fillStyle ="yellow"
+context.beginPath()
+context.arc(250,250,30, 0, 2 * Math.PI)
+context.stroke();
+context.fill();
