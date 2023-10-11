@@ -1557,31 +1557,60 @@
 
 //detect presses
 
-const myDiv = document.getElementById("myDiv")
+// const myDiv = document.getElementById("myDiv")
 
-window.addEventListener("keydown",move)
-let y = 0
-let x = 0
+// window.addEventListener("keydown",move)
+// let y = 0
+// let x = 0
 
-function move(event){
-    switch(event.key){
-        case "ArrowDown":
-        y+=5
-        myDiv.style.top = y + "px"
-        break;
-        case "ArrowUp":
-        y-=5;
-        myDiv.style.top = y + "px"
-        break;
-        case "ArrowLeft":
-        x-=5
-        myDiv.style.left = x + "px"
-        break;
-        case "ArrowRight":
-        x+=5
-        myDiv.style.left = x + "px"
-        break;
-        default:
-            break;
+// function move(event){
+//     switch(event.key){
+//         case "ArrowDown":
+//         y+=5
+//         myDiv.style.top = y + "px"
+//         break;
+//         case "ArrowUp":
+//         y-=5;
+//         myDiv.style.top = y + "px"
+//         break;
+//         case "ArrowLeft":
+//         x-=5
+//         myDiv.style.left = x + "px"
+//         break;
+//         case "ArrowRight":
+//         x+=5
+//         myDiv.style.left = x + "px"
+//         break;
+//         default:
+//             break;
+//     }
+// }
+
+//animations
+
+const mybutton = document.getElementById("mybutton")
+const myanimation = document.getElementById("myDiv")
+
+mybutton.addEventListener("click",begin)
+
+function begin() {
+    let x = 0;
+    let y = 0;
+   
+    let timerId = null;
+
+    timerId = setInterval(frame, 1)
+    function frame(){
+        if(x >= 400 || y >= 400){
+            clearInterval(timerId)
+        }
+        else{
+            x += 1;
+            y += 1;
+           
+            myanimation.style.top = y + "px"
+            myanimation.style.left = x + "px"
+
+        }
     }
 }
