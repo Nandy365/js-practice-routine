@@ -1672,38 +1672,45 @@ let  context = canvas.getContext("2d");
 //(x,y,r sAngle, eAngle, counterclockwise)
 
 
-context.fillStyle ="green"
-context.beginPath()
-context.arc(250,250,100, 0, 2 * Math.PI)
-context.stroke();
-context.fill();
+// context.fillStyle ="green"
+// context.beginPath()
+// context.arc(250,250,100, 0, 2 * Math.PI)
+// context.stroke();
+// context.fill();
 
-context.fillStyle ="blue"
-context.beginPath()
-context.arc(250,250,150, 0, 2 * Math.PI)
-context.stroke();
-context.fill();
+// context.fillStyle ="blue"
+// context.beginPath()
+// context.arc(250,250,150, 0, 2 * Math.PI)
+// context.stroke();
+// context.fill();
 
-context.fillStyle ="pink"
-context.beginPath()
-context.arc(250,250,200, 0, 2 * Math.PI)
-context.stroke();
-context.fill();
+// context.fillStyle ="pink"
+// context.beginPath()
+// context.arc(250,250,200, 0, 2 * Math.PI)
+// context.stroke();
+// context.fill();
 
-context.fillStyle ="red"
-context.beginPath()
-context.arc(250,250,70, 0, 2 * Math.PI)
-context.stroke();
-context.fill();
+// context.fillStyle ="red"
+// context.beginPath()
+// context.arc(250,250,70, 0, 2 * Math.PI)
+// context.stroke();
+// context.fill();
 
-context.fillStyle ="gray"
-context.beginPath()
-context.arc(250,250,50, 0, 2 * Math.PI)
-context.stroke();
-context.fill();
+// context.fillStyle ="gray"
+// context.beginPath()
+// context.arc(250,250,50, 0, 2 * Math.PI)
+// context.stroke();
+// context.fill();
 
-context.fillStyle ="yellow"
-context.beginPath()
-context.arc(250,250,30, 0, 2 * Math.PI)
-context.stroke();
-context.fill();
+// context.fillStyle ="yellow"
+// context.beginPath()
+// context.arc(250,250,30, 0, 2 * Math.PI)
+// context.stroke();
+// context.fill();
+
+//DRAW text
+
+context.font = "50px MV Boli"
+context.textAlign = "center"
+context.fillStyle = "purple"
+context.fillText("You Win", canvas.width / 2,canvas.height/2)
