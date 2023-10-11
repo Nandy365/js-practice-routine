@@ -1,4 +1,4 @@
-.all{
+/* .all{
     display: block;
     text-align: center;
     top :5px;
@@ -11,7 +11,7 @@
     width: 30px;
 }
 body{
-    background-color: black;
+    /* background-color: black; 
     color: aliceblue;
 }
 /* #innerDiv{
@@ -19,7 +19,7 @@ body{
     height: 100px;
     width: 100px;
     border:1px solid black;
-} */
+} 
 #outerDiv{
     background-color: aqua;
     height: 80px;
@@ -34,4 +34,9 @@ body{
     background-color: aqua;
     border: 1px solid;
     position: relative;
+} */
+#canvas{
+    height:500px;
+    width: 500px;
+    border: 1px solid rgb(0, 0, 0);
 }

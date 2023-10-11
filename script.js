@@ -1588,27 +1588,44 @@
 
 //animations
 
-const mybutton = document.getElementById("mybutton")
-const myanimation = document.getElementById("myDiv")
+// const mybutton = document.getElementById("mybutton")
+// const myanimation = document.getElementById("myDiv")
 
-mybutton.addEventListener("click",begin)
+// mybutton.addEventListener("click",begin)
 
-function begin() {
+// function begin() {
    
-    let timerId = null;
-    let scaleX =1;
-    let scaleY =1;    
+//     let timerId = null;
+//     let scaleX =1;
+//     let scaleY =1;    
 
-    timerId = setInterval(frame, 6)
-    function frame(){
-        if(scaleX <= 0.01 ||scaleY <= 0.01){
-            clearInterval(timerId)
-        }
-        else{
-            scaleX -= 0.01;
-            scaleY -= 0.01;
-            myanimation.style.transform ="scale("+scaleX+","+scaleY+")"
-        }
-    }
-}
+//     timerId = setInterval(frame, 6)
+//     function frame(){
+//         if(scaleX <= 0.01 ||scaleY <= 0.01){
+//             clearInterval(timerId)
+//         }
+//         else{
+//             scaleX -= 0.01;
+//             scaleY -= 0.01;
+//             myanimation.style.transform ="scale("+scaleX+","+scaleY+")"
+//         }
+//     }
+// }
+ 
+//canvas API
 
+let canvas = document.getElementById("canvas");
+let  context = canvas.getContext("2d");
+
+//DRAW LINES
+
+context.strokeStyle ="red"
+context.lineWidth = 10;
+context.beginPath();
+context.moveTo(0,0);
+context.lineTo(220,220);
+context.lineTo(220,500)
+context.moveTo(500,0)
+context.lineTo(250,220)
+context.lineTo(250,500)
+context.stroke();
