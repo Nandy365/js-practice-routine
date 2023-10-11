@@ -1596,22 +1596,19 @@ mybutton.addEventListener("click",begin)
 function begin() {
    
     let timerId = null;
-    let degree = 0;
-    let x = 0;
-    let y = 0;
+    let scaleX =1;
+    let scaleY =1;    
 
-    timerId = setInterval(frame, 1)
+    timerId = setInterval(frame, 6)
     function frame(){
-        if(x >= 400 || y >= 400){
+        if(scaleX <= 0.01 ||scaleY <= 0.01){
             clearInterval(timerId)
         }
         else{
-            degree +=2;
-            x +=1;
-            y +=1;
-            myanimation.style.top = x + "px"
-            myanimation.style.left = y + "px"
-            myanimation.style.transform = "rotateZ("+degree+"deg)"
+            scaleX -= 0.01;
+            scaleY -= 0.01;
+            myanimation.style.transform ="scale("+scaleX+","+scaleY+")"
         }
     }
 }
+
