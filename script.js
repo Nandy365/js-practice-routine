@@ -1632,15 +1632,38 @@ let  context = canvas.getContext("2d");
 
 // DRAW TRIANGLE
 
-context.strokeStyle ="orange"
-context.fillStyle ="cyan"
-context.lineWidth = 10
-context.beginPath();
-context.moveTo(250, 0)
-context.lineTo(0, 250)
-context.lineTo(500,250)
-context.lineTo(250,0)
-//context.moveTo(0,250)
-context.lineTo(0,250)
-context.stroke();
-context.fill()
+// context.strokeStyle ="orange"
+// context.fillStyle ="cyan"
+// context.lineWidth = 10
+// context.beginPath();
+// context.moveTo(250, 0)
+// context.lineTo(0, 250)
+// context.lineTo(500,250)
+// context.lineTo(250,0)
+// //context.moveTo(0,250)
+// //context.lineTo(0,250)
+// context.stroke();
+// context.fill()
+
+
+//DRAW RECTANGLE 
+context.fillStyle =""
+context.fillRect(0,0,250,250)
+context.strokeRect(0,0,250,250)
+context.strokeStyle = "white"
+
+
+context.fillStyle ="gray"
+context.strokeRect(0,250,250,250)
+context.fillRect(0,250,250,250)
+context.strokeStyle ="black"
+
+context.fillStyle ="black"
+context.strokeRect(250,250,250,250)
+context.fillRect(250,250,250,250)
+context.strokeStyle ="white"
+
+context.fillStyle ="gray"
+context.strokeRect(250,0,250,250)
+context.fillRect(250,0,250,250)
+context.strokeStyle ="black"
