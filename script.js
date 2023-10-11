@@ -1619,13 +1619,28 @@ let  context = canvas.getContext("2d");
 
 //DRAW LINES
 
-context.strokeStyle ="red"
-context.lineWidth = 10;
+// context.strokeStyle ="red"
+// context.lineWidth = 10;
+// context.beginPath();
+// context.moveTo(0,0);
+// context.lineTo(220,220);
+// context.lineTo(220,500)
+// context.moveTo(500,0)
+// context.lineTo(250,220)
+// context.lineTo(250,500)
+// context.stroke();
+
+// DRAW TRIANGLE
+
+context.strokeStyle ="orange"
+context.fillStyle ="cyan"
+context.lineWidth = 10
 context.beginPath();
-context.moveTo(0,0);
-context.lineTo(220,220);
-context.lineTo(220,500)
-context.moveTo(500,0)
-context.lineTo(250,220)
-context.lineTo(250,500)
+context.moveTo(250, 0)
+context.lineTo(0, 250)
+context.lineTo(500,250)
+context.lineTo(250,0)
+//context.moveTo(0,250)
+context.lineTo(0,250)
 context.stroke();
+context.fill()
