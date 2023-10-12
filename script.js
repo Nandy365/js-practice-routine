@@ -1614,8 +1614,8 @@
  
 //canvas API
 
-let canvas = document.getElementById("canvas");
-let  context = canvas.getContext("2d");
+// let canvas = document.getElementById("canvas");
+// let  context = canvas.getContext("2d");
 
 //DRAW LINES
 
@@ -1710,7 +1710,35 @@ let  context = canvas.getContext("2d");
 
 //DRAW text
 
-context.font = "50px MV Boli"
-context.textAlign = "center"
-context.fillStyle = "purple"
-context.fillText("You Win", canvas.width / 2,canvas.height/2)
+//context.font = "50px MV Boli"
+//context.textAlign = "center"
+//context.fillStyle = "purple"
+//context.fillText("You Win", canvas.width / 2,canvas.height/2)
+
+//window = interface used to take to the web browser
+// the DOM is a property of the window
+
+console.dir(window)
+console.log(window.innerHeight)
+console.log(window.innerWidth)
+console.log(window.outerHeight)
+console.log(window.outerWidth)
+
+console.log(window.location.href);
+window.location.href = "https://google.com";
+
+const mybutton =document.querySelector("#mybutton")
+
+mybutton.addEventListener("click",()=>window.open())
+mybutton.addEventListener("click",()=>window.open("https://google.com"))
+mybutton.addEventListener("click", ()=>window.close());
+mybutton.addEventListener("click", ()=>window.print())
+
+window.alert("hello guys")
+window.confirm("you must selete ok button")
+
+let age = window.prompt("enter your age")
+if(age < 18){
+    window.alert("you must be 18+ to visit this site")
+    window.close()
+}
