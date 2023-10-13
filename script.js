@@ -1757,9 +1757,9 @@
 setCookie("email","kumarnan217@gmail.com",365)
 
 
-// // deleteCookie("firstname")
-// // deleteCookie("lastename")
-// // deleteCookie("email")
+deleteCookie("firstname")
+deleteCookie("lastname")
+deleteCookie("email")
 
 console.log(document.cookie)
 
@@ -1769,7 +1769,7 @@ function setCookie(name,value,daysToLive){
     let expires = "expires" + date.toUTCString();
     document.cookie = `${name}=${value}; ${expires}; path=/`
 }
-// function deleteCookie(name){
-//     setCookie(name,null,null)
-// }
+function deleteCookie(name){
+    setCookie(name,null,null)
+}
 
