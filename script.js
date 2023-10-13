@@ -1748,8 +1748,28 @@
 //saved in name=value pairs
 
 
-//console.log(navigator.cookieEnabled)
+// console.log(navigator.cookieEnabled)
 
-document.cookie ="firstname=Nandy; expires=sun, 2 january 2088 12:00:00 UTC; path=/"
-document.cookie ="lastname=Sidhu; expires=sun , 13 october 2022 14:38:00 UTC; path=/"
+// document.cookie ="firstname=Nandy; expires=sun, 2 january 2088 12:00:00 UTC; path=/"
+// document.cookie ="lastname=Sidhu; expires=sun , 13 october 2026 14:38:00 UTC; path=/"
+// console.log(document.cookie)
+
+setCookie("email","kumarnan217@gmail.com",365)
+
+
+// // deleteCookie("firstname")
+// // deleteCookie("lastename")
+// // deleteCookie("email")
+
 console.log(document.cookie)
+
+function setCookie(name,value,daysToLive){
+    const date = new Date();
+    date.setTime(date.getTime() + (daysToLive * 24 * 60 * 60 *1000))
+    let expires = "expires" + date.toUTCString();
+    document.cookie = `${name}=${value}; ${expires}; path=/`
+}
+// function deleteCookie(name){
+//     setCookie(name,null,null)
+// }
+
