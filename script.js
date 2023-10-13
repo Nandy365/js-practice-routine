@@ -1718,27 +1718,38 @@
 //window = interface used to take to the web browser
 // the DOM is a property of the window
 
-console.dir(window)
-console.log(window.innerHeight)
-console.log(window.innerWidth)
-console.log(window.outerHeight)
-console.log(window.outerWidth)
+// console.dir(window)
+// console.log(window.innerHeight)
+// console.log(window.innerWidth)
+// console.log(window.outerHeight)
+// console.log(window.outerWidth)
 
-console.log(window.location.href);
-window.location.href = "https://google.com";
+// console.log(window.location.href);
+// window.location.href = "https://google.com";
 
-const mybutton =document.querySelector("#mybutton")
+// const mybutton =document.querySelector("#mybutton")
 
-mybutton.addEventListener("click",()=>window.open())
-mybutton.addEventListener("click",()=>window.open("https://google.com"))
-mybutton.addEventListener("click", ()=>window.close());
-mybutton.addEventListener("click", ()=>window.print())
+// mybutton.addEventListener("click",()=>window.open())
+// mybutton.addEventListener("click",()=>window.open("https://google.com"))
+// mybutton.addEventListener("click", ()=>window.close());
+// mybutton.addEventListener("click", ()=>window.print())
 
-window.alert("hello guys")
-window.confirm("you must selete ok button")
+// window.alert("hello guys")
+// window.confirm("you must selete ok button")
 
-let age = window.prompt("enter your age")
-if(age < 18){
-    window.alert("you must be 18+ to visit this site")
-    window.close()
-}
+// let age = window.prompt("enter your age")
+// if(age < 18){
+//     window.alert("you must be 18+ to visit this site")
+//     window.close()
+// }
+
+//cookies = a small text file stored on your computer
+// used to remember information about the user 
+//saved in name=value pairs
+
+
+//console.log(navigator.cookieEnabled)
+
+document.cookie ="firstname=Nandy; expires=sun, 2 january 2088 12:00:00 UTC; path=/"
+document.cookie ="lastname=Sidhu; expires=sun , 13 october 2022 14:38:00 UTC; path=/"
+console.log(document.cookie)
