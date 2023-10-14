@@ -1750,26 +1750,42 @@
 
 // console.log(navigator.cookieEnabled)
 
-// document.cookie ="firstname=Nandy; expires=sun, 2 january 2088 12:00:00 UTC; path=/"
-// document.cookie ="lastname=Sidhu; expires=sun , 13 october 2026 14:38:00 UTC; path=/"
+// document.cookie ="firstName=Nandy; expires=sun, 2 january 2088 12:00:00 UTC; path=/"
+// document.cookie ="lastName=Sidhu; expires=sun , 13 october 2026 14:38:00 UTC; path=/"
 // console.log(document.cookie)
 
 setCookie("email","kumarnan217@gmail.com",365)
 
+// deleteCookie("firstname")
+// deleteCookie("lastname")
+// deleteCookie("email")
 
-deleteCookie("firstname")
-deleteCookie("lastname")
-deleteCookie("email")
+setCookie("firstname","Nandy")
+setCookie("lastname","bhuvi")
 
-console.log(document.cookie)
+console.log(getCookie("firstname"));
+console.log(getCookie("lastname"));
 
-function setCookie(name,value,daysToLive){
+function setCookie(name, value, daysToLive){
     const date = new Date();
-    date.setTime(date.getTime() + (daysToLive * 24 * 60 * 60 *1000))
-    let expires = "expires" + date.toUTCString();
+    date.setTime(date.getTime() + (daysToLive * 24 * 60 *60 *1000 ))
+    let expires = "expires " + date.toUTCString();
     document.cookie = `${name}=${value}; ${expires}; path=/`
 }
+
 function deleteCookie(name){
     setCookie(name,null,null)
 }
 
+function getCookie(name){
+    const cDecode = decodeURIComponent(document.cookie)
+    const cArray = cDecode.split(";")
+    let result;
+
+    cArray.forEach(element => {
+        if(element.indexOf(name) == 0){
+            result = element.substring(name.length + 1)
+        }
+    })
+    return result;
+}
