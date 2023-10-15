@@ -1754,17 +1754,38 @@
 // document.cookie ="lastName=Sidhu; expires=sun , 13 october 2026 14:38:00 UTC; path=/"
 // console.log(document.cookie)
 
-setCookie("email","kumarnan217@gmail.com",365)
+//setCookie("email","kumarnan217@gmail.com",365)
 
 // deleteCookie("firstname")
 // deleteCookie("lastname")
 // deleteCookie("email")
 
-setCookie("firstname","Nandy")
-setCookie("lastname","bhuvi")
+// setCookie("firstname","Nandy")
+// setCookie("lastname","bhuvi")
 
-console.log(getCookie("firstname"));
-console.log(getCookie("lastname"));
+// console.log(getCookie("firstname"));
+// console.log(getCookie("lastname"));
+
+
+const firstText = document.querySelector("#firstText")
+const lasText = document.querySelector("#lastText")
+const submitBtn = document.querySelector("#submitBtn")
+const cookieBtn = document.querySelector("#cookieBtn")
+
+submitBtn.addEventListener("click", () => {
+    setCookie("firstName",firstText.value,365)
+    setCookie("lastName",lasText.value,365)
+
+});
+
+// deleteCookie("firstName")
+// deleteCookie("lastName")
+
+
+cookieBtn.addEventListener("click", () => {
+    firstText.value = getCookie("firstName")
+    lasText.value = getCookie("lastName")
+})
 
 function setCookie(name, value, daysToLive){
     const date = new Date();
