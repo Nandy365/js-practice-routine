@@ -1767,46 +1767,108 @@
 // console.log(getCookie("lastname"));
 
 
-const firstText = document.querySelector("#firstText")
-const lasText = document.querySelector("#lastText")
-const submitBtn = document.querySelector("#submitBtn")
-const cookieBtn = document.querySelector("#cookieBtn")
+// const firstText = document.querySelector("#firstText")
+// const lasText = document.querySelector("#lastText")
+// const submitBtn = document.querySelector("#submitBtn")
+// const cookieBtn = document.querySelector("#cookieBtn")
 
-submitBtn.addEventListener("click", () => {
-    setCookie("firstName",firstText.value,365)
-    setCookie("lastName",lasText.value,365)
+// submitBtn.addEventListener("click", () => {
+//     setCookie("firstName",firstText.value,365)
+//     setCookie("lastName",lasText.value,365)
+
+// });
+
+// // deleteCookie("firstName")
+// // deleteCookie("lastName")
+
+
+// cookieBtn.addEventListener("click", () => {
+//     firstText.value = getCookie("firstName")
+//     lasText.value = getCookie("lastName")
+// })
+
+// function setCookie(name, value, daysToLive){
+//     const date = new Date();
+//     date.setTime(date.getTime() + (daysToLive * 24 * 60 *60 *1000 ))
+//     let expires = "expires " + date.toUTCString();
+//     document.cookie = `${name}=${value}; ${expires}; path=/`
+// }
+
+// function deleteCookie(name){
+//     setCookie(name,null,null)
+// }
+
+// function getCookie(name){
+//     const cDecode = decodeURIComponent(document.cookie)
+//     const cArray = cDecode.split(";")
+//     let result;
+
+//     cArray.forEach(element => {
+//         if(element.indexOf(name) == 0){
+//             result = element.substring(name.length + 1)
+//         }
+//     })
+//     return result;
+// }
+
+
+//stopwatch
+
+const timeDisplay = document.querySelector("#timeDisplay")
+const startBtn = document.querySelector("#startBtn")
+const pauseBtn = document.querySelector("#pauseBtn")
+const resetBtn = document.querySelector("#resetBtn")
+
+let startTime = 0;
+let elapsedTime = 0;
+let currentTime = 0;
+let paused = true;
+let intervalId;
+let hrs = 0;
+let mins = 0;
+let secs = 0;
+let mill = 0;
+startBtn.addEventListener("click", () => {
+    if(paused){
+        paused = false;
+        startTime = Date.now() - elapsedTime;
+        intervalId = setInterval(updateTime, 75)
+    }
+});
+pauseBtn.addEventListener("click",() =>{
+    if(!paused){
+        paused = true;
+        elapsedTime = Date.now() - startTime;
+        clearInterval(intervalId)
+    }
+});
+resetBtn.addEventListener("click",() =>{
+    paused = true;
+    clearInterval(intervalId)
+    startTime = 0;
+    elapsedTime = 0;
+    currentTime = 0;
+    hrs = 0;
+    mins = 0;
+    secs = 0;
+    mill = 0;
+    timeDisplay.textContent ="00:00:00:00"
 
 });
 
-// deleteCookie("firstName")
-// deleteCookie("lastName")
+function updateTime(){
+    elapsedTime = Date.now() - startTime;
+    mill = Math.floor((elapsedTime % 1000) / 100)
+    secs = Math.floor((elapsedTime / 1000) % 60)
+    mins = Math.floor((elapsedTime / (1000 * 60)) % 60);
+    hrs = Math.floor((elapsedTime /  (1000 * 60 * 60)) % 60)
 
-
-cookieBtn.addEventListener("click", () => {
-    firstText.value = getCookie("firstName")
-    lasText.value = getCookie("lastName")
-})
-
-function setCookie(name, value, daysToLive){
-    const date = new Date();
-    date.setTime(date.getTime() + (daysToLive * 24 * 60 *60 *1000 ))
-    let expires = "expires " + date.toUTCString();
-    document.cookie = `${name}=${value}; ${expires}; path=/`
-}
-
-function deleteCookie(name){
-    setCookie(name,null,null)
-}
-
-function getCookie(name){
-    const cDecode = decodeURIComponent(document.cookie)
-    const cArray = cDecode.split(";")
-    let result;
-
-    cArray.forEach(element => {
-        if(element.indexOf(name) == 0){
-            result = element.substring(name.length + 1)
-        }
-    })
-    return result;
+    secs = pad(secs);
+    mins = pad(mins);
+    hrs = pad(hrs);
+    mill = pad(mill);
+    timeDisplay.textContent = `${hrs}:${mins}:${secs}:${mill}`;
+    function pad(unit){
+        return (("0") + unit).length > 2 ? unit : "0" + unit;
+    }
 }

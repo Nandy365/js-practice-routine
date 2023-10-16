@@ -41,8 +41,29 @@ body{
     border: 1px solid rgb(0, 0, 0);
 } */
 
-#mydiv{
+/* #mydiv{
     width: 1000px;
     height: 1000px;
     background-color: aquamarine;
+} */
+
+.timerBtn{
+    width: 80px;
+    height: 30px;
+    border:3px solid;
+    border-radius: 15px;
+    background-color: black;
+    color:white;
+    cursor: pointer;
+    font-family: consolas, monospace;
+}
+#timeDisplay{
+    font-size: 75px;
+    color: rgb(0, 183, 255);
+}
+#timeContainer{
+    text-align: center;
+    border: 3px solid;
+    border-radius: 25px;
+    background-color: black;
 }
