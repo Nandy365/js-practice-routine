@@ -1927,18 +1927,36 @@
 // }
 
 
-    class User {
-        constructor(name,age){
+    // class User {
+    //     constructor(name,age){
 
-        this.name = name;
-        this.age = age;
-        }
+    //     this.name = name;
+    //     this.age = age;
+    //     }
 
-    greet() {
-        console.log("hi")
-    }
-    }
-    const user1 = new User ("manuel",233)
-    console.log(user1)
-    user1.greet()
+    // greet() {
+    //     console.log("hi")
+    // }
+    // }
+    // const user1 = new User ("manuel",233)
+    // console.log(user1)
+    // user1.greet()
     
+
+const user = prompt("enter password")
+
+if(user === "Hello"){
+    console.log("welcome")
+}
+else if( user === "hello"){
+    console.log("welcome")
+}
+else{
+    console.log("wrong")
+}
+
+const hello = ["nandy","aj"]
+
+for(const helloguys of hello ){
+    console.log(helloguys)
+}
