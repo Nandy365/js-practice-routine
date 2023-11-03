@@ -1943,20 +1943,32 @@
     // user1.greet()
     
 
-const user = prompt("enter password")
+// const user = prompt("enter password")
 
-if(user === "Hello"){
-    console.log("welcome")
-}
-else if( user === "hello"){
-    console.log("welcome")
-}
-else{
-    console.log("wrong")
+// if(user === "Hello"){
+//     console.log("welcome")
+// }
+// else if( user === "hello"){
+//     console.log("welcome")
+// }
+// else{
+//     console.log("wrong")
+// }
+
+// const hello = ["nandy","aj"]
+
+// for(const helloguys of hello ){
+//     console.log(helloguys)
+// }
+
+
+function hello(){
+    console.log("hello")
 }
 
-const hello = ["nandy","aj"]
-
-for(const helloguys of hello ){
-    console.log(helloguys)
+const hi = ()=>{
+    console.log("world")
 }
+
+setTimeout(hello,3000)
+setTimeout(hi,4000)
