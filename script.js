@@ -1961,7 +1961,7 @@
 //     console.log(helloguys)
 // }
 
-
+const all = document.getElementById("text").innerHTML +=hello+hi
 function hello(){
     console.log("hello")
 }
@@ -1972,3 +1972,4 @@ const hi = ()=>{
 
 setTimeout(hello,3000)
 setTimeout(hi,4000)
+
